@@ -37,3 +37,14 @@ footer{
     border: black 2px solid;
 
 }
+@media (max-width: 1000px){
+    div.main{
+        flex-direction: column;
+    }
+    nav{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+}
