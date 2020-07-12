@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* input [type = "text"]{
+    margin: 0 auto;
+} */
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+div {
+    width: 400px;
+    margin: 0 auto;
+}
+#colorPanel{
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+}
+footer{
+    height: 100px;
+    margin-top: auto;
+    background-color: black;
+}
