@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorfulBackground</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="stage">
+    </div>
+    <script>
+        let target = "";
+        let colorNum = 1;
+        let chageFlg = true;
+        // let changePos = 0;
+        /*
+        0 red
+        1 green
+        2 blue
+        */
+        window.addEventListener("load", () => {
+            target = document.getElementById("stage");
+            setInterval(changeBg, 50)
+        })
+        // console.log(changePos);
+        function changeBg(){
+            if(chageFlg == true){
+                target.style.background = "linear-gradient(45deg, #fff, hsl("+colorNum+",100%,50%))";
+                // if(colorNum >= 360){
+                //     // changePos++;
+                //     // colorNum = 0;
+                //     chageFlg = false;
+                // }
+                // console.log("up!!")
+                colorNum++;
+            } 
+            // else if(chageFlg == false){
+            //     target.style.background = "linear-gradient(45deg, #fff, hsl("+colorNum+",100%,50%))";
+            //     if(colorNum >= 360){
+            //         // changePos++;
+            //         // colorNum = 0;
+            //         chageFlg = true;
+            //     }
+            //     console.log("down!!")
+            //     colorNum--;
+            // }
+            // else if(changePos == 1){
+            //     target.style.background = "linear-gradient(45deg, #fff, rgb(255,"+(255 - colorNum)+",88))";
+            //     if(colorNum > 255){
+            //         changePos++;
+            //         colorNum = 0;
+            //     }
+            //     console.log("green")
+            // }else if(changePos == 2){
+            //     target.style.background = "linear-gradient(45deg, #fff, rgb(255,255,"+(255 - colorNum)+"))";
+            //     if(colorNum > 255){
+            //         changePos =  0;
+            //         colorNum = 0;
+            //     }
+            //     console.log("blue");
+            // }
+            
+            colorNum++;
+            
+        }
+    </script>
+</body>
+</html>
