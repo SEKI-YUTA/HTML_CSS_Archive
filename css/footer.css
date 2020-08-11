@@ -1,0 +1,8 @@
+footer {
+    background: #ECECEC;
+    flex-direction: column;
+    padding: 20px 0;
+}
+footer small {
+    margin: 0 20px;
+}
