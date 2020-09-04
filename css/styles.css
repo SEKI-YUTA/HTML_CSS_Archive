@@ -1,0 +1,376 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background: #ffffff;
+}
+ul
+{
+    list-style: none;
+}
+header .brandName
+{
+    height: 100px;
+    box-sizing: border-box;
+}
+.brandName h1
+{
+    background: url(../img/header_upper.jpg) no-repeat;
+    background-size: cover;
+    height: 100px;
+}
+#brand_logo {
+    margin: 0 0 0 30px;
+}
+header .topMenu
+{
+    background: #000066;
+    text-align: right;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+.topMenu ul
+{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.topMenu ul li
+{
+    height: 26px;
+    line-height: 20px;
+    font-size: 10px;
+    font-weight: 400;
+    display: inline-block;
+    background: #000066;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    border-left: 2px solid white;
+    display: flex;
+    align-items: center;
+}
+.headerBottom img
+{
+    width: 800px;
+    /* background: #000066; */
+    vertical-align: bottom;
+}
+.box
+{
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main
+{
+    display: flex;
+    width: 100%;
+}
+.bar
+{
+    width: calc(100% - 10px);
+    height: 3px;
+    background: blue;
+    margin: 10px auto;
+}
+aside 
+{
+    width: 200px;
+    background: #F0F3FC;
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+}
+aside h4
+{
+    width: 180px;
+    /* margin: 0 auto; */
+    background: url(../img/menu_ttlbg0.jpg) no-repeat;
+    /* background: red; */
+    margin-bottom: 5px;
+    color: #e1fcff;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+aside ul li
+{
+    background: url(../img/menu_bg.jpg) no-repeat;
+    padding: 0 10px;
+    width: 180px;
+}
+aside ul li:first-child
+{
+    background: url(../img/menu_ttlbg.jpg) no-repeat;
+}
+
+aside ul
+{
+    padding: 0 10px;
+    margin: 10px auto;
+}
+.helth {
+    margin: 20px 0;
+    font-size: 12px;
+    font-weight: 700;
+}
+#whatsNew
+{
+    height: 120px;
+    line-height: 140%;
+    overflow: scroll;
+    overflow-x: hidden;
+    background: white;
+}
+#whatsNew ul li
+{
+    padding: 5px 0em;
+    border-bottom: 1px dashed gray;
+}
+.date
+{
+    margin-right: 20px;
+    color: orange;
+}
+
+.menuText
+{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+}
+.titleText
+{
+    width: 555px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    background: url(../img/ttl_head0.gif) left no-repeat #1B4EA5;
+    color: white;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+.whatsNewText
+{
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 400;
+}
+.textOrange
+{
+    color: #ff6600;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;  
+}
+.textBlue
+{
+    color: #0066cc;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.cardTitleText
+{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    margin-left: 10px;
+}
+.cardText
+{
+    color: #55acac;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+}
+.textRed
+{
+    color: #ff0000;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    
+}
+.textNormal
+{
+    color: #333333;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+}
+.textCenter
+{
+    text-align: center;
+}
+
+
+main
+{
+    width: calc(100% - 200px);
+    background: #F3F6FD;
+    margin: 0 auto;
+}
+section
+{
+    margin: 0 auto;
+}
+#info
+{
+    width: 555px;
+}
+#info #pray,
+#info #officeContact
+{
+    width: 555px;
+    box-sizing: border-box;
+    background: white;
+    padding: 20px;
+    border: 2px solid blue;
+    /* border-radius: 10px; */
+    margin-bottom: 10px;
+}
+.layout
+{
+    width: 555px;
+    box-sizing: border-box;
+    background: white;
+    padding: 20px;
+    border: 1px solid gray;
+    margin: 0 auto;
+}
+.container
+{
+    padding: 10px;
+    text-align: center;
+}
+#schoolIntro
+{
+    /* text-align: center; */
+}
+#schoolIntro > h2
+{
+    margin-bottom: 5px;
+}
+#manThree ul
+{
+width: 555px;
+height: 20px;
+/* display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center; */
+text-align: center;
+}
+#manThree ul li
+{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    /* float: left; */
+    margin-right: 52px;
+    display: inline-block;
+}
+#manThree ul li::after
+{
+    content: '';
+    display: table-cell;
+    clear: both;
+}
+#tabakoTrue ul
+{
+    text-align: center;
+
+}
+#tabakoTrue ul li
+{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    /* float: left; */
+    margin-right: 1em;
+    display: inline-block;
+}
+/* #tabakoTrue ul li:nth-child(10n) {
+    /* margin-right: 0; */
+} */
+#tabakoTrue ul li::after
+{
+    content: '';
+    display: table-cell;
+    clear: both;
+}
+#moreInfo
+{
+    width: 555px;
+    margin: 0 auto;
+}
+#cards
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 20px 0;
+}
+#card1
+{
+    box-sizing: border-box;
+    width: 270px;
+    height: 155px;
+    background: url(../img/osirase1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+    margin: 10px;
+}
+#card2
+{
+    box-sizing: border-box;
+    width: 270px;
+    height: 155px;
+    background: url(../img/osirase2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+    margin: 10px;
+}
+footer
+{
+    text-align: center;
+}
+footer #underMenu
+{
+    background: white;
+}
+#underMenu ul
+{
+    height: 50px;
+    width: 100%;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+}
+
+#underMenu li
+{
+    /* display: inline; */
+    color: #353b89;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    border-left: 1px solid blue;
+    /* padding: 0 5px; */
+    display: inline-block;
+}
