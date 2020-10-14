@@ -136,6 +136,15 @@ h1,h2,h3,p {
 .categorys li a{
   color: #777777;
 }
+.resent-post {
+  text-align: center;
+}
+.resent-post ul {
+  display: inline-block;
+}
+.resent-post li {
+  text-align: left;
+}
 footer {
   width: 1035px;
   margin: 0 auto;
