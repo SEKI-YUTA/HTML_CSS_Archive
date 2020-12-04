@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+}
+
+header .logo {
+  font-family: Quicksand, "Noto Sans Japanese", sans-serif;
+  font-size: 33px;
+  font-weight: 400;
+  color: #0d0015;
+  margin-top: 50px;
+}
+
+header .logo span {
+  padding: 15px;
+}
+
+header .logo .green {
+  color: greenyellow;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header ul li {
+  padding: 25px;
+}
+
+header ul li .bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  padding: 0 -20px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+header ul li:hover .bar {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  background: #000;
+}
+
+header ul li a {
+  text-decoration: none;
+}
+
+.main-container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.main-container main {
+  width: 760px;
+}
+
+.main-container main .card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 760px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-container main .card {
+  width: 380px;
+  height: 350px;
+}
+
+.main-container main .card .img-wrapper {
+  width: 100%;
+  height: 210px;
+  position: relative;
+}
+
+.main-container main .card .img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-container main .card .img-wrapper p {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.main-container main .card .textContent {
+  width: 100%;
+  height: 140px;
+  position: relative;
+}
+
+.main-container main .card .textContent a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #0d0015;
+}
+
+.main-container main .card .textContent a:active {
+  color: #0d0015;
+}
+
+.main-container main .card .textContent a .date {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.main-container main .pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container main .pages p {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #BFBFBF;
+  background: #fff;
+  border: 1px #BFBFBF solid;
+  line-height: 30px;
+  text-align: center;
+}
+
+.main-container main .pages p.active {
+  background: #000;
+  color: white;
+}
+
+.main-container main .pages p + p {
+  margin-left: 15px;
+}
+
+.main-container aside {
+  width: 350px;
+}
+/*# sourceMappingURL=styles.css.map */
