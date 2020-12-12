@@ -3,7 +3,10 @@
 *::after
 {
   box-sizing: border-box;
+  
 }
+
+
 
 header
 {
@@ -55,9 +58,21 @@ header
   
 }
 
+.download {
+  width: 300px;
+  text-align: center;
+  padding: 10px 0;        
+  color: white;
+  border-radius: 20px;
+  background: rgb(255, 32, 169);
+  border: 1px solid white;
+  box-shadow: -2px 0 0 0 rgb(255, 32, 169);
+}
+
 .main-container
 {
   width: 1140px;
+  display: flex;
   margin: 0 auto;
   main
   {
@@ -68,10 +83,17 @@ header
       width: 760px;
       flex-wrap: wrap;
     }
+    .card:nth-of-type(even) {
+      margin-left: 20px;
+    }
+    .card:nth-of-type(n + 3) {
+      margin-top: 20px;
+    }
     .card
     {
-      width: 380px;
+      width: calc(50% - 10px);
       height: 350px;
+      border: 1px solid gray;
       .img-wrapper
       {
         width: 100%;
@@ -87,6 +109,10 @@ header
           position: absolute;
           top: 20px;
           left: 20px;
+          padding: 5px;
+          border-radius: 10px;
+          background: greenyellow;
+          color: white;
         }
       }
       .textContent
@@ -119,6 +145,7 @@ header
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 20px;
       p
       {
         width: 30px;
@@ -141,8 +168,84 @@ header
       }
     }
   }
-  aside
+}
+
+aside
   {
     width: 350px;
+    .sales {
+      margin: 0 30px;
+      h2 {
+        font-size: 25px;
+        padding: 10px 0;
+        color: white;
+        text-align: center;
+        background-color: black;
+        font-weight: bold;
+      }
+      img {
+        width: 100%;
+      }
+      p {
+
+        font-size: 16px;
+        color: #0d0015;
+      }
+    
+    }
+
+    .profile {
+      margin: 0 30px;
+      div {
+        text-align: center;
+        font-size: 16px;
+        img {
+          border-radius: 50%;
+        }
+      }
+      .description,
+      .sns {
+        margin-top: 16px;
+      }
+    }
   }
-}
+
+  footer {
+    background: rgb(78, 61, 124);
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 calc(450px - 50vw);
+    .left,.center,.right {
+      width: 300px;
+    }
+    .left {
+    
+      img {
+        width: 300px;
+      }
+    }
+    .center {
+      .category a,
+      .archives a{
+        color: white;
+        text-decoration: none;
+      }
+      .title {
+        color: white;
+        font-size: 20px;
+        position: relative;
+      }
+      .title::before {
+        content: '';
+        display: inline-block;
+        width: 3px;
+        height: 20px;
+        position: absolute;
+        left: -10px;
+        background: lightgreen;
+      }
+    }
+    .right {
+
+    }
+  }
