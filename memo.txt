@@ -1,1 +1,8 @@
 https://jin-demo.jp/demo-4/
+
+max-width 1024px
+文字を小さくする
+レイアウトを少しづつ小さくする
+
+max-width 768px 
+すまほレイアウト
