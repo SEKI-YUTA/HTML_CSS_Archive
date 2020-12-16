@@ -5,13 +5,17 @@
           box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 header {
   text-align: center;
 }
 
 header .logo {
   font-family: Quicksand, "Noto Sans Japanese", sans-serif;
-  font-size: 33px;
+  font-size: 3.3rem;
   font-weight: 400;
   color: #0d0015;
   margin-top: 50px;
@@ -39,6 +43,7 @@ header ul {
 
 header ul li {
   padding: 25px;
+  font-size: 1.6rem;
 }
 
 header ul li .bar {
@@ -65,6 +70,7 @@ header ul li a {
 .download {
   width: 300px;
   margin-top: 10px;
+  font-size: 1.6rem;
   text-align: center;
   padding: 10px 0;
   color: white;
@@ -76,22 +82,28 @@ header ul li a {
 }
 
 .main-container {
-  width: 1140px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
   margin: 0 auto;
 }
 
 .main-container main {
-  width: 760px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  width: 100%;
 }
 
 .main-container main .card-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 760px;
+  width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -108,6 +120,7 @@ header ul li a {
   width: calc(50% - 10px);
   height: 350px;
   border: none;
+  border-radius: 10px;
   -webkit-box-shadow: 2px 2px 5px gray;
           box-shadow: 2px 2px 5px gray;
   -webkit-transform: translateY(0);
@@ -141,7 +154,7 @@ header ul li a {
   padding: 7px;
   border-radius: 15px;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 1rem;
   background: #9ACC1E;
   color: white;
 }
@@ -154,7 +167,7 @@ header ul li a {
 
 .main-container main .card .textContent a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
   line-height: 26px;
   color: #0d0015;
@@ -166,7 +179,7 @@ header ul li a {
 
 .main-container main .card .textContent a .date {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #888888;
   position: absolute;
   right: 20px;
@@ -185,7 +198,7 @@ header ul li a {
           align-items: center;
   padding: 25px;
   font-weight: 400;
-  font-size: 18;
+  font-size: 1.8rem;
   line-height: 26px;
   color: #0d0015;
 }
@@ -224,7 +237,10 @@ header ul li a {
 }
 
 aside {
-  width: 350px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  width: 100%;
 }
 
 aside > div {
@@ -233,7 +249,7 @@ aside > div {
 
 aside .asideTitle {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #0d0015;
   margin-top: 20px;
 }
@@ -248,17 +264,13 @@ aside .asideTitle::after {
 }
 
 aside .text {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 200;
   color: #0d0015;
 }
 
-aside .sales {
-  margin: 0 30px;
-}
-
 aside .sales h2 {
-  font-size: 20px;
+  font-size: 2rem;
   padding: 10px 0;
   color: white;
   text-align: center;
@@ -276,7 +288,7 @@ aside .profile {
 
 aside .profile div {
   text-align: center;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 aside .profile div img {
@@ -308,7 +320,7 @@ aside .resentPosts .post img {
 aside .resentPosts .post p {
   width: calc(100% - 100px);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 18px;
   padding: 5px;
 }
@@ -323,18 +335,23 @@ aside .categorys select {
 
 aside .tags span {
   display: inline-block;
-  font-size: 10px;
+  font-size: 1rem;
   padding: 3px;
   margin: 0 3px;
   background: gray;
 }
 
+aside .tags span i {
+  color: white;
+}
+
 aside .search input[type="text"] {
+  display: block;
   width: calc(100% - 20px);
   margin: 0 auto;
   height: 30px;
   border-radius: 15px;
-  padding-left: 10px;
+  padding: 0 10px;
 }
 
 aside .recommend .post {
@@ -353,7 +370,7 @@ aside .recommend .post img {
 aside .recommend .post p {
   width: calc(100% - 100px);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 18px;
   padding: 5px;
 }
@@ -362,20 +379,21 @@ aside .recommend .post p:hover {
   color: #e22255;
 }
 
-aside footer {
+footer {
   width: 100%;
   background: #393542;
   padding-top: 50px;
   margin-top: 50px;
+  font-size: 1.6rem;
 }
 
-aside footer .title {
+footer .title {
   color: white;
-  font-size: 20px;
+  font-size: 2rem;
   position: relative;
 }
 
-aside footer .title::before {
+footer .title::before {
   content: '';
   display: inline-block;
   width: 3px;
@@ -385,7 +403,7 @@ aside footer .title::before {
   background: lightgreen;
 }
 
-aside footer .container {
+footer .container {
   width: 1100px;
   margin: 0 auto;
   display: -ms-grid;
@@ -394,34 +412,34 @@ aside footer .container {
       grid-template-columns: 300px 400px 400px;
 }
 
-aside footer .container .left {
+footer .container .left {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
   color: white;
 }
 
-aside footer .container .left .logoWrap {
+footer .container .left .logoWrap {
   text-align: center;
 }
 
-aside footer .container .left .logoWrap img {
+footer .container .left .logoWrap img {
   width: 150px;
 }
 
-aside footer .container .left p {
+footer .container .left p {
   margin-top: 20px;
 }
 
-aside footer .container .left .tags span {
+footer .container .left .tags span {
   display: inline-block;
-  font-size: 10px;
+  font-size: 1rem;
   padding: 3px;
   margin: 0 3px;
   background: gray;
 }
 
-aside footer .container .center {
+footer .container .center {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
@@ -430,25 +448,25 @@ aside footer .container .center {
   display: flex;
 }
 
-aside footer .container .center .category,
-aside footer .container .center .archives {
+footer .container .center .category,
+footer .container .center .archives {
   width: 200px;
   margin: 0 20px;
 }
 
-aside footer .container .center .category a,
-aside footer .container .center .archives a {
+footer .container .center .category a,
+footer .container .center .archives a {
   color: white;
   text-decoration: none;
 }
 
-aside footer .container .right {
+footer .container .right {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3 / 4;
 }
 
-aside footer .container .right .post {
+footer .container .right .post {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -458,19 +476,48 @@ aside footer .container .right .post {
   margin: 5px 0;
 }
 
-aside footer .container .right .post img {
+footer .container .right .post img {
   width: 130px;
 }
 
-aside footer .container .right .post p {
+footer .container .right .post p {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 18px;
   padding: 5px;
   color: white;
 }
 
-aside footer .container .right .post p:hover {
+footer .container .right .post p:hover {
   color: #e22255;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-container main {
+    width: 100%;
+  }
+  .main-container aside {
+    width: 100%;
+  }
+  .main-container aside > div {
+    margin: 30px 0px;
+  }
+  .main-container aside .sales img {
+    width: 500px;
+  }
+  footer .container {
+    width: 100%;
+    display: block;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
