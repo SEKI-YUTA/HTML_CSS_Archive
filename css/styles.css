@@ -68,7 +68,7 @@ header ul li a {
 }
 
 .download {
-  width: 300px;
+  width: 100%;
   margin-top: 10px;
   font-size: 1.6rem;
   text-align: center;
@@ -85,18 +85,18 @@ header ul li a {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 auto;
 }
 
 .main-container main {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  width: 100%;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  width: 66%;
+  padding: 0 30px;
 }
 
 .main-container main .card-wrapper {
@@ -118,11 +118,8 @@ header ul li a {
 
 .main-container main .card {
   width: calc(50% - 10px);
-  height: 350px;
   border: none;
-  border-radius: 10px;
-  -webkit-box-shadow: 2px 2px 5px gray;
-          box-shadow: 2px 2px 5px gray;
+  border: 1px solid #EEEEEE;
   -webkit-transform: translateY(0);
           transform: translateY(0);
   -webkit-transition: .2s ease;
@@ -138,13 +135,11 @@ header ul li a {
 
 .main-container main .card .img-wrapper {
   width: 100%;
-  height: 210px;
   position: relative;
 }
 
 .main-container main .card .img-wrapper img {
   width: 100%;
-  height: 100%;
 }
 
 .main-container main .card .img-wrapper p {
@@ -237,21 +232,21 @@ header ul li a {
 }
 
 aside {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  width: 100%;
+  width: 33%;
 }
 
 aside > div {
   margin: 0 30px;
 }
 
+aside > div:not(:first-of-type) {
+  margin-top: 20px;
+}
+
 aside .asideTitle {
   font-weight: 300;
   font-size: 1.8rem;
   color: #0d0015;
-  margin-top: 20px;
 }
 
 aside .asideTitle::after {
@@ -269,7 +264,15 @@ aside .text {
   color: #0d0015;
 }
 
-aside .sales h2 {
+aside .sales {
+  border: 1px solid #EEEEEE;
+}
+
+aside .sales .theme {
+  width: 100%;
+}
+
+aside .sales .theme h2 {
   font-size: 2rem;
   padding: 10px 0;
   color: white;
@@ -278,12 +281,17 @@ aside .sales h2 {
   font-weight: bold;
 }
 
-aside .sales img {
+aside .sales .content {
+  padding: 20px 30px;
+}
+
+aside .sales .content img {
   width: 100%;
 }
 
 aside .profile {
-  margin: 0 30px;
+  border: 1px solid #EEEEEE;
+  padding: 20px 30px;
 }
 
 aside .profile div {
@@ -301,7 +309,8 @@ aside .profile .sns {
 }
 
 aside .resentPosts {
-  margin: 0 30px;
+  border: 1px solid #EEEEEE;
+  padding: 20px 30px;
 }
 
 aside .resentPosts .post {
@@ -314,11 +323,14 @@ aside .resentPosts .post {
 }
 
 aside .resentPosts .post img {
-  width: 100px;
+  width: 34%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 aside .resentPosts .post p {
-  width: calc(100% - 100px);
+  width: 66%;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 18px;
@@ -329,8 +341,18 @@ aside .resentPosts .post p:hover {
   color: #e22255;
 }
 
+aside .categorys {
+  border: 1px solid #EEEEEE;
+  padding: 20px 30px;
+}
+
 aside .categorys select {
   width: 100%;
+}
+
+aside .tags {
+  border: 1px solid #EEEEEE;
+  padding: 20px 30px;
 }
 
 aside .tags span {
@@ -345,6 +367,11 @@ aside .tags span i {
   color: white;
 }
 
+aside .search {
+  border: 1px solid #EEEEEE;
+  padding: 20px 30px;
+}
+
 aside .search input[type="text"] {
   display: block;
   width: calc(100% - 20px);
@@ -352,6 +379,11 @@ aside .search input[type="text"] {
   height: 30px;
   border-radius: 15px;
   padding: 0 10px;
+}
+
+aside .recommend {
+  border: 1px solid #EEEEEE;
+  padding: 20px 30px;
 }
 
 aside .recommend .post {
@@ -364,11 +396,13 @@ aside .recommend .post {
 }
 
 aside .recommend .post img {
-  width: 100px;
+  width: 34%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 aside .recommend .post p {
-  width: calc(100% - 100px);
+  width: 66%;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 18px;
@@ -382,7 +416,7 @@ aside .recommend .post p:hover {
 footer {
   width: 100%;
   background: #393542;
-  padding-top: 50px;
+  padding: 50px 0;
   margin-top: 50px;
   font-size: 1.6rem;
 }
@@ -404,12 +438,13 @@ footer .title::before {
 }
 
 footer .container {
-  width: 1100px;
+  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 300px 400px 400px;
-      grid-template-columns: 300px 400px 400px;
+  -ms-grid-columns: 3fr 4fr 4fr;
+      grid-template-columns: 3fr 4fr 4fr;
 }
 
 footer .container .left {
@@ -477,10 +512,13 @@ footer .container .right .post {
 }
 
 footer .container .right .post img {
-  width: 130px;
+  width: 32.5%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 footer .container .right .post p {
+  width: 67.5%;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 18px;
@@ -493,6 +531,12 @@ footer .container .right .post p:hover {
 }
 
 @media (max-width: 768px) {
+  header h1 {
+    margin-bottom: 30px;
+  }
+  header ul {
+    display: none;
+  }
   .main-container {
     width: 100%;
     display: -webkit-box;
@@ -507,17 +551,30 @@ footer .container .right .post p:hover {
     width: 100%;
   }
   .main-container aside {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #EEEEEE;
   }
   .main-container aside > div {
     margin: 30px 0px;
   }
   .main-container aside .sales img {
-    width: 500px;
+    width: 100%;
+  }
+  .main-container aside .sales .content {
+    margin-top: 20px;
   }
   footer .container {
     width: 100%;
     display: block;
+  }
+  footer .container .center {
+    display: block;
+  }
+  footer .container .category ul li,
+  footer .container .archives ul li {
+    margin: 10px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
