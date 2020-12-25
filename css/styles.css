@@ -65,6 +65,7 @@ header ul li:hover .bar {
 
 header ul li a {
   text-decoration: none;
+  color: #000;
 }
 
 .download {
