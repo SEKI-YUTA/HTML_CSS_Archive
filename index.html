@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YUTA's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="https://kit.fontawesome.com/ab6d33b71f.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="menu-wrapper">
+      <ul>
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">SKILL</a></li>
+        <li><a href="">CONTACT</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <p class=".title">YUTA's Portfolio</p>
+    </section>
+    
+    <section class="works bg-white" id="works">
+      <h2 class="sec-title">WORKS</h2>
+      <div class="container"> 
+        <div class="work">
+          <div class="img-wrapper">
+            <img src="./img/isara.png" alt="">
+          </div>
+          <div class="content">
+            <p>iSara（模写）</p>
+            <a href="https://isara.life/">https://isara.life/</a>
+          </div>
+        </div>
+        <div class="work">
+          <div class="img-wrapper">
+            <img src="./img/Airbnb.png" alt="">
+          </div>
+          <div class="content">
+            <p>Airbnb（模写）</p>
+            <a href="https://www.airbnb.jp/">https://www.airbnb.jp/</a>
+          </div>
+        </div>
+        <div class="work">
+          <div class="img-wrapper">
+            <img src="./img/Write.png" alt="">
+          </div>
+          <div class="content">
+            <p>Write（模写）</p>
+            <a href="http://demo.themegraphy.com/write-ja/">http://demo.themegraphy.com/write-ja/</a>
+          </div>
+        </div>
+        <div class="work">
+          <div class="img-wrapper">
+            <img src="./img/JIN.png" alt="">
+          </div>
+          <div class="content">
+            <p>JIN DEMO SITE 4（模写）</p>
+            <a href="https://jin-demo.jp/demo-4/">https://jin-demo.jp/demo-4/</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about bg-white" id="about">
+      <h2 class="sec-title">ABOUT</h2>
+      <div class="container">
+        <div class="img-wrapper">
+          <img src="./img/アイコン.jpg" alt="">
+        </div>
+        <div class="content">
+          <p>
+            2002年生まれ、和歌山県出身。
+            2020年から本格的にHTML、CSSの学習を開始。
+            そして今までに、iSara、Airbnb、Write、JIN DEMO　SITE　を模写しました。
+            案件獲得を目指して引き続き勉強中です。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills bg-white" id="skill">
+      <h2 class="sec-title">SKILLs</h2>
+      <div class="container">
+        <div class="skill" data-color="1">HTML&CSS</div>
+        <div class="skill" data-color="2">javascript</div>
+        <div class="skill" data-color="3">PhotoShop</div>
+      </div>
+    </section>
+
+    <section class="contact bg-white" id="contact">
+      <h2 class="sec-title">CONTACT</h2>
+      <ul>
+        <li>
+          <a href="https://twitter.com/yutabeginner"><i class="fab fa-twitter-square"></i></a>
+        </li>
+        <li>
+          <input id="adress" value="yuta953x@gmail.com" readonly></input>
+          <button  onclick="copy()">コピー</button>
+        </li>
+        <li>
+          <p>連絡はSNSかメールでお願いします。</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
