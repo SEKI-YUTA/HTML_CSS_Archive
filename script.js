@@ -1,9 +1,13 @@
 const $mailAddress = document.getElementById('adress');
-const $resButton = document.getElementById('res-button');
+const $showButton = document.getElementById('show-button');
+const $closeButton = document.getElementById('close-button');
 const $menu = document.getElementById('menu');
 
-$resButton.addEventListener('click',() => {
-  $menu.classList.toggle('show');
+$showButton.addEventListener('click',() => {
+  $menu.classList.add('show');
+})
+$closeButton.addEventListener('click',() => {
+  $menu.classList.remove('show');
 })
 
 function copy() {

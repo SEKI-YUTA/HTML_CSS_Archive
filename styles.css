@@ -8,7 +8,7 @@ body {
   padding: 20px 0;
 }
 
-.menu-wrapper .res-button {
+.menu-wrapper .show-button {
   display: none;
 }
 
@@ -79,6 +79,10 @@ body {
       flex-wrap: wrap;
 }
 
+.works {
+  padding-bottom: 10px;
+}
+
 .works .work {
   width: 490px;
   margin-bottom: 20px;
@@ -88,19 +92,27 @@ body {
   margin-right: 20px;
 }
 
+.works .work .content {
+  font-size: 1.2rem;
+  font-style: bold;
+}
+
 .works .work img {
   width: 100%;
+}
+
+.about {
+  padding-bottom: 30px;
 }
 
 .about .img-wrapper {
   width: 40%;
   text-align: center;
-  padding-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .about .img-wrapper img {
   width: 200px;
-  border-radius: 50%;
 }
 
 .about .content {
@@ -177,11 +189,43 @@ body {
   outline: 5px solid rgba(128, 128, 128, 0.4);
 }
 
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bg-white {
+    width: 100%;
+  }
+  .works .work {
+    width: calc(100% - 400px);
+    margin-bottom: 20px;
+  }
+  .works .work .img-wrapper {
+    width: 100%;
+  }
+  .works .work .img-wrapper img {
+    width: 100%;
+  }
+  .works .work:nth-of-type(odd) {
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 1000px) {
+  html {
+    font-size: 10px;
+  }
   .menu-wrapper {
     position: relative;
   }
-  .menu-wrapper .res-button {
+  .menu-wrapper .show-button {
     display: block;
     width: 30px;
     height: 30px;
@@ -190,7 +234,7 @@ body {
     position: relative;
     margin-left: 20px;
   }
-  .menu-wrapper .res-button::before {
+  .menu-wrapper .show-button::before {
     content: '';
     width: 20px;
     height: 2px;
@@ -199,7 +243,7 @@ body {
     left: 5px;
     background: white;
   }
-  .menu-wrapper .res-button::after {
+  .menu-wrapper .show-button::after {
     content: '';
     width: 20px;
     height: 2px;
@@ -207,6 +251,14 @@ body {
     bottom: 10px;
     left: 5px;
     background: white;
+  }
+  .menu-wrapper .close-button {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 3.5rem;
+  }
+  .menu-wrapper .close-button i {
+    line-height: 50px;
   }
   .menu-wrapper ul {
     width: 300px;
@@ -217,7 +269,7 @@ body {
     -webkit-transition: .3s;
     transition: .3s;
     background: #888888;
-    margin-top: 20px;
+    top: 0;
   }
   .menu-wrapper ul.show {
     -webkit-transform: translateX(0);
@@ -231,6 +283,18 @@ body {
   }
   .menu-wrapper ul li a {
     line-height: 50px;
+  }
+  .works .work {
+    width: calc(100% - 100px);
+  }
+  .skills .container .skill:not(:first-child) {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about .img-wrapper {
+    width: 200px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

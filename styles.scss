@@ -5,7 +5,7 @@ body {
 .menu-wrapper {
   box-shadow: 0 2px 5px #888888;
   padding: 20px 0;
-  .res-button {
+  .show-button {
     display: none;
   }
   ul {
@@ -63,11 +63,17 @@ body {
   flex-wrap: wrap;
 }
 .works {
+  padding-bottom: 10px;
   .work {
     width: 490px;
     margin-bottom: 20px;
     &:nth-of-type(odd) {
       margin-right: 20px;
+      // margin: 0;
+    }
+    .content {
+      font-size: 1.2rem;
+      font-style: bold;
     }
     img {
       width: 100%;
@@ -76,13 +82,14 @@ body {
 }
 
 .about {
+  padding-bottom: 30px;
   .img-wrapper {
     width: 40%;
     text-align: center;
-    padding-bottom: 30px;
+    margin-bottom: 20px;
     img {
       width: 200px;
-      border-radius: 50%;
+      // border-radius: 50%;
     }
   }
   .content {
@@ -148,10 +155,39 @@ body {
   }
 }
 
+@media(max-width: 1200px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bg-white {
+    width: 100%;
+  }
+  .works {
+    .work {
+      width: calc(100% - 400px);
+      margin-bottom: 20px;
+      .img-wrapper {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      &:nth-of-type(odd) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
 @media(max-width: 1000px) {
+  html {
+    font-size: 10px;
+  }
   .menu-wrapper {
     position: relative;
-    .res-button {
+    .show-button {
       display: block;
       width: 30px;
       height: 30px;
@@ -178,6 +214,33 @@ body {
         background: white;
       }
     }
+
+    .close-button {
+      text-align: left;
+      margin-left: 20px;
+      font-size: 3.5rem;
+      i {
+              line-height: 50px;
+
+      }
+    }
+    // .close-button {
+    //   margin: 10px 20px;
+    //   &::before {
+    //     content: '';
+    //     position: static;
+    //     transform-origin: center;
+    //     transform: rotate(45deg);
+    //   }
+    //   &::after {
+    //     content: '';
+    //     position: static;
+    //     transform-origin: center;
+    //     transform: rotate(-45deg);
+    //   }
+    // }
+
+
     ul {
       width: 300px;
       height: 100vh;
@@ -185,7 +248,8 @@ body {
       transform: translateX(-300px);
       transition: .3s;
       background: #888888;
-      margin-top: 20px;
+      // margin-top: 20px;
+      top: 0;
       &.show {
         transform: translateX(0);
       }
@@ -198,6 +262,36 @@ body {
           line-height: 50px;
         }
       }
+    }
+  }
+  
+
+  .works {
+    .work {
+      width: calc(100% - 100px);
+    }
+  }
+  
+  .about {
+    .container {
+    }
+  }
+
+  .skills {
+    .container {
+      .skill {
+        &:not(:first-child) {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  .about {
+    .img-wrapper {
+      width: 200px;
     }
   }
 }
