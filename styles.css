@@ -26,6 +26,10 @@ body {
   text-align: center;
 }
 
+.menu-wrapper ul li.close-button {
+  display: none;
+}
+
 .menu-wrapper ul li::after {
   content: '';
 }
@@ -224,6 +228,9 @@ body {
   }
   .menu-wrapper {
     position: relative;
+  }
+  .menu-wrapper ul li.close-button {
+    display: block;
   }
   .menu-wrapper .show-button {
     display: block;
