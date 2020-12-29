@@ -2,13 +2,14 @@ html {font-size: 10px;}
 
 header {
   width: 100%;
-  padding: 10px 0;
   background: #F5F5F5;
   .menu-wrapper {
-    width: 1000px;
+    width: 980px;
+    padding: 10px 10px;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    background: transparent;
     .logo-wrapper {
       font-size: 5rem;
     }
@@ -45,15 +46,20 @@ main {
     width: 100%;
     height: 440px;
     position: relative;
+    background: url(../img/hero.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
     img {
       width: 100%;
+      height: 440px;
     }
     .hero-text {
       font-size: 6rem;
       color: #ffffff;
       position: absolute;
-      top: 180px;
-      right: 100px;
+      top: 50%;
+      right: 80px;
+      transform: translateY(-50%);
     }
   }
 
@@ -134,10 +140,10 @@ main {
       .content {
         margin-top: 10px;
         h3 {
-          font-size: 2rem;
+          font-size: 3rem;
         }
         p {
-          font-size: 1.5rem;
+          font-size: 2rem;
           line-height: 1.3;
         }
       }
@@ -154,7 +160,7 @@ main {
       }
       a {
         display: block;
-        width: 300px;
+        width: 280px;
         height: 160px;
         font-size: 3rem;
         line-height: 160px;
@@ -171,5 +177,79 @@ main {
         }
       }
     }
+  }
+}
+
+
+
+@media(max-width:1100px) {
+  html {font-size: 8px;}
+  main {
+    width: 100%;
+    .hero {
+      .hero-text {
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+
+  }
+}
+
+@media(max-width: 600px) {
+  html {
+    font-size: 6px;
+  }
+  main {
+
+    .courses {
+      .box {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .cards {
+      flex-wrap: wrap;
+      align-items: flex-start;
+      align-items: center;
+      .card {
+        // width: calc(50% - 100px);
+        height: 340px;
+        .content {
+          h3 {
+            font-size: 25px;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .conv {
+      flex-direction: column;
+      align-items: center;
+      div {
+        a {
+          font-size: 30px;
+        }
+        &:first-child {
+          margin-right: 0px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 30px 0px;
+  background: #f5f5f5;
+  p {
+    font-size: 16px;
+  text-align: center;
   }
 }
