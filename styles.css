@@ -266,6 +266,7 @@ body {
   }
   .menu-wrapper .close-button i {
     line-height: 50px;
+    color: #F1F1F1;
   }
   .menu-wrapper ul {
     width: 300px;
