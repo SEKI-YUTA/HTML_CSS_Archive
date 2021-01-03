@@ -57,6 +57,7 @@ body {
 
 .hero .stroke__container {
   min-width: 250px;
+  max-width: 1000px;
   width: 800px;
   padding: 0 10px;
 }
