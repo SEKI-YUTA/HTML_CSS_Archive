@@ -104,7 +104,13 @@ body {
     .content {
       font-size: 1.2rem;
       font-style: bold;
-      margin-top: 10px;
+      p {
+        margin-top: 20px;
+      }
+      a {
+        display: block;
+        margin-top: 10px;
+      }
     }
     img {
       width: 100%;
@@ -120,6 +126,8 @@ body {
     margin-bottom: 20px;
     img {
       width: 200px;
+      height: 250px;
+      object-fit: cover;
       // border-radius: 50%;
     }
   }
