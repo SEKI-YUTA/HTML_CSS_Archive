@@ -336,8 +336,8 @@ body {
     background: white;
   }
   .menu-wrapper .close-button {
-    text-align: left;
-    margin-left: 20px;
+    text-align: initial;
+    padding-left: 20px;
     font-size: 3.5rem;
   }
   .menu-wrapper .close-button i {
