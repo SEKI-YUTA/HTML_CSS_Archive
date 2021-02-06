@@ -24,8 +24,18 @@ body {
   width: 130px;
   margin: 0 10px;
   float: left;
-  border-bottom: 1px solid #919191;
+  border-bottom: 1px solid #afafaf;
   text-align: center;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.menu-wrapper ul li:hover {
+  background: #afafaf;
+}
+
+.menu-wrapper ul li:hover a {
+  color: white;
 }
 
 .menu-wrapper ul li.close-button {
@@ -353,7 +363,9 @@ body {
             transform: translateX(-300px);
     -webkit-transition: .3s;
     transition: .3s;
-    background: #888888;
+    background: rgba(237, 237, 237, 0.8);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
     top: 0;
   }
   .menu-wrapper #menu.show {
