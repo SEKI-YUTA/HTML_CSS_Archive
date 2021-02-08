@@ -7,7 +7,7 @@ header {
   background: #F5F5F5;
 }
 
-header .menu-wrapper {
+header .menu_wrapper {
   width: 980px;
   padding: 10px 10px;
   margin: 0 auto;
@@ -20,28 +20,28 @@ header .menu-wrapper {
   background: transparent;
 }
 
-header .menu-wrapper .logo-wrapper {
+header .menu_wrapper .logo_wrapper {
   font-size: 5rem;
 }
 
-header .menu-wrapper nav ul li {
+header .menu_wrapper nav ul li {
   float: left;
   margin-left: 10px;
 }
 
-header .menu-wrapper nav ul li a {
+header .menu_wrapper nav ul li a {
   font-size: 2rem;
   text-decoration: none;
   color: #333333;
   padding: 5px;
 }
 
-header .menu-wrapper nav ul li a.bg-g {
+header .menu_wrapper nav ul li a.bg-g {
   background: lightgreen;
   color: #ffffff;
 }
 
-header .menu-wrapper nav ul li a.border-g {
+header .menu_wrapper nav ul li a.border-g {
   border: 1px solid lightgreen;
 }
 
@@ -65,7 +65,7 @@ main .hero img {
   height: 440px;
 }
 
-main .hero .hero-text {
+main .hero .hero_text {
   font-size: 6rem;
   color: #ffffff;
   position: absolute;
@@ -133,17 +133,17 @@ main .courses .box .course .price {
   font-size: 2rem;
 }
 
-main .add-order h2 {
+main .add_order h2 {
   font-size: 4.5rem;
   margin-bottom: 10px;
   line-height: 1.5;
 }
 
-main .add-order h2.c-red {
+main .add_order h2.c-red {
   color: red;
 }
 
-main .add-order p {
+main .add_order p {
   font-size: 3rem;
   margin-bottom: 10px;
 }
@@ -164,7 +164,7 @@ main .cards .card {
   margin: 10px;
 }
 
-main .cards .card .img-wrapper img {
+main .cards .card .img_wrapper img {
   width: 100%;
 }
 
@@ -224,7 +224,7 @@ main .conv div a.btn-gray {
   main {
     width: 100%;
   }
-  main .hero .hero-text {
+  main .hero .hero_text {
     width: 100%;
     top: 50%;
     left: 50%;
