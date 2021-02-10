@@ -1,0 +1,28 @@
+:root {
+  --bg-color: #096FC8;
+}
+.ly_stickScroll {
+  width: 100%;
+  height: 1000px;
+  position: relative;
+}
+.ly_stickScroll_inner {
+  position: absolute;
+  left: -500px;
+  width: 2000px;
+  height: 2000px;
+  margin: 0 auto;
+  background: var(--bg-color);
+  border-radius: 50%;
+}
+.bl_contents_wrapper {
+  width: 100%;
+  height: 100px;
+  background: yellow;
+}
+/* .ly_stickScroll_inner_top {
+  width: 100%;
+  height: 500px;
+  background: var(--bg-color);
+  border-radius: 50% / 80%
+} */
