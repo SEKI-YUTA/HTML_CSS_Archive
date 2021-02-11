@@ -4,7 +4,7 @@
 
 {
     const $circle = document.getElementById('js_circle');
-    const $slide = document.getElementById('js_places_card_slide');
+    const $slide = document.getElementById('js_places_cardSlide');
 
   let hovering = false;
 
