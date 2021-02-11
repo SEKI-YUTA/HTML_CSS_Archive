@@ -107,6 +107,23 @@
   /* use to padding-right enable*/
 }
 
+.un_circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #8f8f8f;
+  position: fixed;
+  z-index: 10;
+  -webkit-transition: .2s;
+  transition: .2s;
+  background: #1a1a1a;
+  line-height: 80px;
+  text-align: center;
+  color: #fff;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
 /* コンテンツ  */
 .ly_stickScroll {
   width: 100%;

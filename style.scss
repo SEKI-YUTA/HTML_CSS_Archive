@@ -83,6 +83,20 @@
 .un_cardBlank {
   /* use to padding-right enable*/
 }
+.un_circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgb(143, 143, 143);
+  position: fixed;
+  z-index: 10;
+  transition: .2s;
+  background: rgb(26, 26, 26);
+  line-height: 80px;
+  text-align: center;
+  color: #fff;
+  transform: scale(0);
+}
 /* コンテンツ  */
 .ly_stickScroll {
   width: 100%;
