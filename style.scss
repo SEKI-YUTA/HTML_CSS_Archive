@@ -100,14 +100,56 @@
 /* コンテンツ  */
 .ly_stickScroll {
   width: 100%;
-  height: 1000px;
   position: relative;
 }
 .ly_stickScroll_inner {
   width: 100%;
   background: var(--bg-color);
-  padding-top: 300px;
-  padding-bottom: 200px;
+  padding: 300px 0;
+}
+.bl_borderCurve__top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-color: white;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    transform-origin: top;
+    transform: translateX(-50%) scale(2);
+  }
+}
+.bl_borderCurve__bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-color: white;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%) scale(2);
+  }
+}
+
+.bl_borderCircle {
+  // width: ;
 }
 .bl_conts_wrapper {
   width: 100%;
@@ -163,14 +205,12 @@
 @media screen and (max-width: 1280px) {
   .ly_stickScroll {
     width: 100%;
-    height: 1000px;
     position: relative;
   }
   .ly_stickScroll_inner {
     width: 100%;
     background: var(--bg-color);
-    padding-top: 300px;
-    padding-bottom: 200px;
+    padding: 300px 0;
   }
   .bl_conts_wrapper {
     width: 100%;
@@ -225,14 +265,12 @@
 @media screen and (max-width: 1024px) {
   .ly_stickScroll {
     width: 100%;
-    height: 1000px;
     position: relative;
   }
   .ly_stickScroll_inner {
     width: 100%;
     background: var(--bg-color);
-    padding-top: 300px;
-    padding-bottom: 200px;
+    padding: 300px 0;
   }
   .bl_conts_wrapper {
     width: 100%;
@@ -320,14 +358,13 @@
   }
   .ly_stickScroll {
     width: 100%;
-    height: 1000px;
+    
     position: relative;
   }
   .ly_stickScroll_inner {
     width: 100%;
     background: var(--bg-color);
-    padding-top: 300px;
-    padding-bottom: 200px;
+    padding: 300px 0;
   }
   .bl_conts_wrapper {
     width: 100%;
