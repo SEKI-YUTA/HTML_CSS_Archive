@@ -138,25 +138,25 @@
   padding-bottom: 200px;
 }
 
-.bl_contents_wrapper {
+.bl_conts_wrapper {
   width: 100%;
 }
 
-.bl_contents_wrapper .bl_top .bl_top_img {
+.bl_conts_wrapper .bl_top .bl_top_img {
   width: 75%;
   margin-right: auto;
 }
 
-.bl_contents_wrapper .bl_top .bl_top_img img {
+.bl_conts_wrapper .bl_top .bl_top_img img {
   width: 100%;
   border-radius: 0px 10px 10px 0px;
 }
 
-.bl_contents_wrapper .bl_places {
+.bl_conts_wrapper .bl_places {
   margin-top: 165px;
 }
 
-.bl_contents_wrapper .bl_places .bl_places_cardSlider {
+.bl_conts_wrapper .bl_places .bl_places_cardSlider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,37 +164,37 @@
   overflow-y: hidden;
 }
 
-.bl_contents_wrapper .bl_places .bl_places_cardSlider::-webkit-scrollbar {
+.bl_conts_wrapper .bl_places .bl_places_cardSlider::-webkit-scrollbar {
   display: none;
 }
 
-.bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide {
+.bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0 calc((100% - 684px) / 2);
 }
 
-.bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card {
+.bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card {
   min-width: 684px;
 }
 
-.bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card:not(:first-child) {
+.bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card:not(:first-child) {
   margin-left: 100px;
 }
 
-.bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .bl_places_imgWrapper {
+.bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .bl_places_imgWrapper {
   width: 100%;
 }
 
-.bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .bl_places_imgWrapper img {
+.bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .bl_places_imgWrapper img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
 
-.bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .el_address i {
-  margin-right: 20px;
+.bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .el_address i {
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -209,49 +209,49 @@
     padding-top: 300px;
     padding-bottom: 200px;
   }
-  .bl_contents_wrapper {
+  .bl_conts_wrapper {
     width: 100%;
   }
-  .bl_contents_wrapper .bl_top .bl_top_img {
+  .bl_conts_wrapper .bl_top .bl_top_img {
     width: 75%;
     margin-right: auto;
   }
-  .bl_contents_wrapper .bl_top .bl_top_img img {
+  .bl_conts_wrapper .bl_top .bl_top_img img {
     width: 100%;
     border-radius: 0px 10px 10px 0px;
   }
-  .bl_contents_wrapper .bl_places {
+  .bl_conts_wrapper .bl_places {
     margin-top: 165px;
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider {
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide {
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 0 calc((100% - 545px) / 2);
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide::-webkit-scrollbar {
-    display: none;
-  }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card {
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card {
     min-width: 545px;
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card:not(:first-child) {
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card:not(:first-child) {
     margin-left: 100px;
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .bl_places_imgWrapper {
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .bl_places_imgWrapper {
     width: 100%;
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .bl_places_imgWrapper img {
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .bl_places_imgWrapper img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .el_address i {
-    margin-right: 20px;
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .el_address i {
+    margin-right: 10px;
   }
 }
 
@@ -267,53 +267,84 @@
     padding-top: 300px;
     padding-bottom: 200px;
   }
-  .bl_contents_wrapper {
+  .bl_conts_wrapper {
     width: 100%;
   }
-  .bl_contents_wrapper .bl_top .bl_top_img {
+  .bl_conts_wrapper .bl_top .bl_top_img {
     width: 75%;
     margin-right: auto;
   }
-  .bl_contents_wrapper .bl_top .bl_top_img img {
+  .bl_conts_wrapper .bl_top .bl_top_img img {
     width: 100%;
     border-radius: 0px 10px 10px 0px;
   }
-  .bl_contents_wrapper .bl_places {
+  .bl_conts_wrapper .bl_places {
     margin-top: 165px;
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider {
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide {
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 0 calc((100% - 480px) / 2);
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide::-webkit-scrollbar {
-    display: none;
-  }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card {
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card {
     min-width: 480px;
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card:not(:first-child) {
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card:not(:first-child) {
     margin-left: 60px;
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .bl_places_imgWrapper {
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .bl_places_imgWrapper {
     width: 100%;
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .bl_places_imgWrapper img {
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .bl_places_imgWrapper img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .el_address i {
-    margin-right: 20px;
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .el_address i {
+    margin-right: 10px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .el_txt {
+    font-family: "A+EqpB-游ゴシック体 Pr6N B", sans-serif;
+    color: #fff;
+  }
+  .el_txt.el_txt__lg {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  .el_txt.el_txt__sm {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .el_placeName {
+    font-family: "My Galano Grotesque", sans-serif;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  .el_address {
+    font-family: "My Galano Grotesque", sans-serif;
+    color: #fff;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+  .el_btn {
+    width: 200px;
+  }
   .hp_txtCenter {
     text-align: left !important;
   }
@@ -328,49 +359,64 @@
     padding-top: 300px;
     padding-bottom: 200px;
   }
-  .bl_contents_wrapper {
+  .bl_conts_wrapper {
     width: 100%;
   }
-  .bl_contents_wrapper .bl_top .bl_top_img {
+  .bl_conts_wrapper .bl_top .bl_top_img {
     width: calc(100% - 65px);
     margin-right: auto;
   }
-  .bl_contents_wrapper .bl_top .bl_top_img img {
+  .bl_conts_wrapper .bl_top .bl_top_img img {
     width: 100%;
     border-radius: 0px 10px 10px 0px;
   }
-  .bl_contents_wrapper .bl_places {
+  .bl_conts_wrapper .bl_top .bl_top_cont.hp_txtCenter {
+    margin: 0 20px;
+  }
+  .bl_conts_wrapper .bl_top .bl_top_cont.hp_txtCenter .el_secTtl.hp_mt70 {
+    margin-top: 50px !important;
+  }
+  .bl_conts_wrapper .bl_places {
     margin-top: 165px;
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider {
-    overflow-x: scroll;
-    overflow-y: hidden;
-  }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide {
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide::-webkit-scrollbar {
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide {
+    padding: 0;
+  }
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .un_circle {
     display: none;
+  }
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding: 0 25px;
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card {
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card {
     min-width: 385px;
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card:not(:first-child) {
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card:not(:first-child) {
     margin-left: 15px;
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .bl_places_imgWrapper {
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .bl_places_imgWrapper {
     width: 100%;
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .bl_places_imgWrapper img {
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .bl_places_imgWrapper img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
   }
-  .bl_contents_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .el_address i {
-    margin-right: 20px;
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .el_placeName.hp_mt60 {
+    margin-top: 30px !important;
+  }
+  .bl_conts_wrapper .bl_places .bl_places_cardSlider .bl_places_cardSlide .bl_places_card .el_address i {
+    margin-right: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

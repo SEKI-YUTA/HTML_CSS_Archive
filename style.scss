@@ -109,7 +109,7 @@
   padding-top: 300px;
   padding-bottom: 200px;
 }
-.bl_contents_wrapper {
+.bl_conts_wrapper {
   width: 100%;
   .bl_top {
     .bl_top_img {
@@ -123,11 +123,8 @@
   }
   .bl_places {
     margin-top: 165px;
-    // padding-left: calc((100% - 684px) / 2);
-    // overflow-x: visible;
-    // z-index: 10;
     .bl_places_cardSlider {
-      display: flex;
+      display:  flex;
       overflow-x: scroll;
       overflow-y: hidden;
       &::-webkit-scrollbar {
@@ -135,7 +132,7 @@
       }
       .bl_places_cardSlide {
         display: flex;
-        padding: 0 calc((100% - 684px) / 2);  //後で変えるべき
+        padding: 0 calc((100% - 684px) / 2);
         .bl_places_card {
           min-width: 684px;
           &:not(:first-child) {
@@ -152,7 +149,7 @@
           }
           .el_address {
             i {
-              margin-right: 20px;
+              margin-right: 10px;
             }
           }
         }
@@ -175,7 +172,7 @@
     padding-top: 300px;
     padding-bottom: 200px;
   }
-  .bl_contents_wrapper {
+  .bl_conts_wrapper {
     width: 100%;
     .bl_top {
       .bl_top_img {
@@ -193,14 +190,12 @@
       // overflow-x: visible;
       // z-index: 10;
       .bl_places_cardSlider {
+        display: flex;
         overflow-x: scroll;
         overflow-y: hidden;
         .bl_places_cardSlide {
           display: flex;
           padding: 0 calc((100% - 545px) / 2);
-          &::-webkit-scrollbar {
-            display: none;
-          }
           .bl_places_card {
             min-width: 545px;
             &:not(:first-child) {
@@ -217,7 +212,7 @@
             }
             .el_address {
               i {
-                margin-right: 20px;
+                margin-right: 10px;
               }
             }
           }
@@ -239,7 +234,7 @@
     padding-top: 300px;
     padding-bottom: 200px;
   }
-  .bl_contents_wrapper {
+  .bl_conts_wrapper {
     width: 100%;
     .bl_top {
       .bl_top_img {
@@ -257,14 +252,12 @@
       // overflow-x: visible;
       // z-index: 10;
       .bl_places_cardSlider {
+        display: flex;
         overflow-x: scroll;
         overflow-y: hidden;
         .bl_places_cardSlide {
           display: flex;
           padding: 0 calc((100% - 480px) / 2);
-          &::-webkit-scrollbar {
-            display: none;
-          }
           .bl_places_card {
             min-width: 480px;
             &:not(:first-child) {
@@ -281,7 +274,7 @@
             }
             .el_address {
               i {
-                margin-right: 20px;
+                margin-right: 10px;
               }
             }
           }
@@ -291,6 +284,37 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .el_txt {
+    font-family: "A+EqpB-游ゴシック体 Pr6N B", sans-serif;
+    color: #fff;
+    &.el_txt__lg {
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 32px;
+    }
+    &.el_txt__sm {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+  .el_placeName {
+    font-family: "My Galano Grotesque", sans-serif;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  .el_address {
+    font-family: "My Galano Grotesque", sans-serif;
+    color: #fff;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+  .el_btn {
+    width: 200px;
+  }
   .hp_txtCenter {
     text-align: left !important;
   }
@@ -305,7 +329,7 @@
     padding-top: 300px;
     padding-bottom: 200px;
   }
-  .bl_contents_wrapper {
+  .bl_conts_wrapper {
     width: 100%;
     .bl_top {
       .bl_top_img {
@@ -316,21 +340,33 @@
           border-radius: 0px 10px 10px 0px;
         }
       }
+      .bl_top_cont.hp_txtCenter {
+        margin: 0 20px;
+        .el_secTtl.hp_mt70 {
+          margin-top: 50px !important;
+        }
+      }
     }
     .bl_places {
       margin-top: 165px;
-      // padding-left: calc((100% - 684px) / 2);
-      // overflow-x: visible;
-      // z-index: 10;
       .bl_places_cardSlider {
+        display: flex;
         overflow-x: scroll;
         overflow-y: hidden;
+        &::-webkit-scrollbar {
+          // opacity: 1;
+          // visibility: visible;
+          // display: block; ??????
+        }
+        .bl_places_cardSlide {
+          padding: 0;
+        }
+        .un_circle {
+          display: none;
+        }
         .bl_places_cardSlide {
           display: flex;
-          &::-webkit-scrollbar {
-            display: none;
-            padding: 0 25px;
-          }
+          padding: 0 25px;
           .bl_places_card {
             min-width: 385px;
             &:not(:first-child) {
@@ -338,16 +374,18 @@
             }
             .bl_places_imgWrapper {
               width: 100%;
-              // height: 374px;
               img {
                 width: 100%;
                 height: 100%;
                 border-radius: 10px;
               }
             }
+            .el_placeName.hp_mt60 {
+              margin-top: 30px !important;
+            }
             .el_address {
               i {
-                margin-right: 20px;
+                margin-right: 10px;
               }
             }
           }
