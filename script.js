@@ -5,6 +5,8 @@
 {
     const $circle = document.getElementById('js_circle');
     const $slide = document.getElementById('js_places_cardSlide');
+    const $slider = document.querySelector('.bl_places_cardSlider');
+
 
   let hovering = false;
 
@@ -13,11 +15,6 @@
         // pointerY = event.pageY;
         hovering = true;
         $circle.style.transform = 'scale(1)';
-        // circle.style.left = (pointerX - 50) + 'px';
-        // circle.style.top = (pointerY - 50) + 'px';
-        // console.log('event.pageX' + event.pageX)
-        // console.log('event.pageY' + event.pageY)
-        // changePos();
         if(hovering) {
           $circle.style.left = event.clientX + 'px';
           $circle.style.top = event.clientY + 'px';
@@ -33,10 +30,8 @@
       hovering = false;
     })
 
-    // setInterval(changePos, 20);
 
 
-    const $slider = document.querySelector('.bl_places_cardSlider');
     let isDown = false;
     let startX;
     let scrollLeft;
@@ -59,9 +54,6 @@
     });
     $slider.addEventListener('mousemove', (e)=> {
       if(!isDown) return;
-      // console.count(isDown);
-      // console.log('working!');
-      // console.log(startX);
 
       e.preventDefault();
 

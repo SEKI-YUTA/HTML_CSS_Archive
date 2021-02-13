@@ -54,6 +54,7 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  text-decoration: underline;
 }
 .el_btn {
   width: 250px;
@@ -79,9 +80,6 @@
       }
     }
   }
-}
-.un_cardBlank {
-  /* use to padding-right enable*/
 }
 .un_circle {
   width: 80px;
@@ -185,7 +183,6 @@
             // height: 374px;
             img {
               width: 100%;
-              height: 100%;
               border-radius: 10px;
             }
           }
@@ -203,57 +200,16 @@
 
 
 @media screen and (max-width: 1280px) {
-  .ly_stickScroll {
-    width: 100%;
-    position: relative;
-  }
-  .ly_stickScroll_inner {
-    width: 100%;
-    background: var(--bg-color);
-    padding: 300px 0;
-  }
   .bl_conts_wrapper {
-    width: 100%;
-    .bl_top {
-      .bl_top_img {
-        width: 75%;
-        margin-right: auto;
-        img {
-          width: 100%;
-          border-radius: 0px 10px 10px 0px;
-        }
-      }
-    }
     .bl_places {
-      margin-top: 165px;
-      // padding-left: calc((100% - 684px) / 2);
-      // overflow-x: visible;
-      // z-index: 10;
       .bl_places_cardSlider {
-        display: flex;
-        overflow-x: scroll;
-        overflow-y: hidden;
         .bl_places_cardSlide {
-          display: flex;
+          // display: flex;
           padding: 0 calc((100% - 545px) / 2);
           .bl_places_card {
             min-width: 545px;
             &:not(:first-child) {
               margin-left: 100px;
-            }
-            .bl_places_imgWrapper {
-              width: 100%;
-              // height: 374px;
-              img {
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
-              }
-            }
-            .el_address {
-              i {
-                margin-right: 10px;
-              }
             }
           }
         }
@@ -263,57 +219,15 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .ly_stickScroll {
-    width: 100%;
-    position: relative;
-  }
-  .ly_stickScroll_inner {
-    width: 100%;
-    background: var(--bg-color);
-    padding: 300px 0;
-  }
   .bl_conts_wrapper {
-    width: 100%;
-    .bl_top {
-      .bl_top_img {
-        width: 75%;
-        margin-right: auto;
-        img {
-          width: 100%;
-          border-radius: 0px 10px 10px 0px;
-        }
-      }
-    }
     .bl_places {
-      margin-top: 165px;
-      // padding-left: calc((100% - 684px) / 2);
-      // overflow-x: visible;
-      // z-index: 10;
       .bl_places_cardSlider {
-        display: flex;
-        overflow-x: scroll;
-        overflow-y: hidden;
         .bl_places_cardSlide {
-          display: flex;
           padding: 0 calc((100% - 480px) / 2);
           .bl_places_card {
             min-width: 480px;
             &:not(:first-child) {
               margin-left: 60px;
-            }
-            .bl_places_imgWrapper {
-              width: 100%;
-              // height: 374px;
-              img {
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
-              }
-            }
-            .el_address {
-              i {
-                margin-right: 10px;
-              }
             }
           }
         }
@@ -353,19 +267,6 @@
   .el_btn {
     width: 200px;
   }
-  .hp_txtCenter {
-    text-align: left !important;
-  }
-  .ly_stickScroll {
-    width: 100%;
-    
-    position: relative;
-  }
-  .ly_stickScroll_inner {
-    width: 100%;
-    background: var(--bg-color);
-    padding: 300px 0;
-  }
   .bl_conts_wrapper {
     width: 100%;
     .bl_top {
@@ -379,17 +280,15 @@
       }
       .bl_top_cont.hp_txtCenter {
         margin: 0 20px;
+        text-align: left !important;
         .el_secTtl.hp_mt70 {
           margin-top: 50px !important;
         }
       }
     }
     .bl_places {
-      margin-top: 165px;
+      margin-top: 100px;
       .bl_places_cardSlider {
-        display: flex;
-        overflow-x: scroll;
-        overflow-y: hidden;
         &::-webkit-scrollbar {
           // opacity: 1;
           // visibility: visible;
@@ -402,27 +301,18 @@
           display: none;
         }
         .bl_places_cardSlide {
-          display: flex;
           padding: 0 25px;
           .bl_places_card {
             min-width: 385px;
             &:not(:first-child) {
               margin-left: 15px;
             }
-            .bl_places_imgWrapper {
-              width: 100%;
-              img {
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
-              }
-            }
             .el_placeName.hp_mt60 {
               margin-top: 30px !important;
             }
             .el_address {
               i {
-                margin-right: 10px;
+                margin-right: 5px;
               }
             }
           }
