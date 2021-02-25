@@ -183,22 +183,50 @@ a:visited {
           transform: translateY(-50%);
 }
 
-.bl_txtBox__career {
-  width: 100%;
-}
-
+/*以下ホバーアニメーション*/
+/*
 .bl_imgAnim {
   overflow: hidden;
+  img {
+    transition: .2s;
+  }
+  &:hover img{
+    transform: scale(1.1);
+  }
 }
-
-.bl_imgAnim img {
-  -webkit-transition: .2s;
-  transition: .2s;
+.el_slideLink {
+  &:hover i {
+    transform: translateX(5px) scale(1.2);
+  }
+  &:hover .defo,&:hover .hoverd {
+    transform: translateY(-30px);
+  }
 }
-
-.bl_imgAnim:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.bl_opportunit_cont_name {
+  i {
+    &:hover {
+      transform: scale(1.2) translateY(-5px) translateX(5px);
+    }
+  }
+}
+.bl_getTo_card {
+  &:hover .bl_getTo_card_imgBox{
+    border: 5px solid $bgColor;
+  }
+}
+.bl_learnMore_card {
+  &:hover .bl_learnMore_card_imgBox{
+    border: 5px solid $bgColor;
+  }
+}
+.bl_imgLink {
+  &:hover img{
+    transform: scale(1.1);
+  }
+}
+*/
+.bl_txtBox__career {
+  width: 100%;
 }
 
 .bl_secTtl {
@@ -384,16 +412,6 @@ a:visited {
   line-height: 30px;
 }
 
-.el_slideLink:hover i {
-  -webkit-transform: translateX(5px) scale(1.2);
-          transform: translateX(5px) scale(1.2);
-}
-
-.el_slideLink:hover .defo, .el_slideLink:hover .hoverd {
-  -webkit-transform: translateY(-30px);
-          transform: translateY(-30px);
-}
-
 .bl_opportunit_cont {
   margin-top: 45px;
 }
@@ -430,11 +448,6 @@ a:visited {
   transition: .3s;
 }
 
-.bl_opportunit_cont_name i:hover {
-  -webkit-transform: scale(1.2) translateY(-5px) translateX(5px);
-          transform: scale(1.2) translateY(-5px) translateX(5px);
-}
-
 .ly_sec.bl_getTo {
   width: 100%;
 }
@@ -456,10 +469,6 @@ a:visited {
   height: 400px;
   -webkit-transition: .3s;
   transition: .3s;
-}
-
-.bl_getTo_card:hover .bl_getTo_card_imgBox {
-  border: 5px solid #096FC8;
 }
 
 .bl_getTo_card:first-of-type {
@@ -544,10 +553,6 @@ a:visited {
   transition: .3s;
 }
 
-.bl_learnMore_card:hover img {
-  border: 5px solid #096FC8;
-}
-
 .bl_learnMore_card_imgBox {
   width: 385px;
   height: 235px;
@@ -555,10 +560,6 @@ a:visited {
   -webkit-transition: .3s;
   transition: .3s;
   border-radius: 10px;
-}
-
-.bl_learnMore_card_imgBox:hover {
-  border: 5px solid #096FC8;
 }
 
 .bl_learnMore_card_txt_ttl {
@@ -882,11 +883,6 @@ img {
   transition: .2s;
 }
 
-.bl_imgLink:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 .bl_imgLink_txt {
   position: absolute;
   top: 50%;
@@ -1021,10 +1017,6 @@ img {
   .bl_imgLink img {
     -webkit-transition: .2s;
     transition: .2s;
-  }
-  .bl_imgLink:hover img {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   .bl_imgLink_txt {
     position: absolute;
@@ -1296,10 +1288,6 @@ img {
   .bl_imgLink img {
     -webkit-transition: .2s;
     transition: .2s;
-  }
-  .bl_imgLink:hover img {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   .bl_imgLink_txt {
     position: absolute;
@@ -1606,10 +1594,6 @@ img {
     -webkit-transition: .2s;
     transition: .2s;
   }
-  .bl_imgLink:hover img {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
   .bl_imgLink {
     margin-top: 60px !important;
   }
@@ -1879,9 +1863,12 @@ img {
     display: flex;
     width: 100%;
     height: 100px;
-  }
-  .bl_getTo_card:hover .bl_getTo_card_imgBox {
-    border: none;
+    /*
+    ボーダーを消すため
+    &:hover .bl_getTo_card_imgBox{
+      border: none;
+    }
+    */
   }
   .bl_getTo_card:first-of-type {
     margin-right: 0px;
@@ -1898,10 +1885,6 @@ img {
   .bl_getTo_card_imgBox img {
     -webkit-transition: .2s;
     transition: .2s;
-  }
-  .bl_getTo_card_imgBox:hover img {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   .bl_getTo_cont_txtBox .bl_getTo_cont_ttl {
     margin-top: 0;
@@ -1965,9 +1948,11 @@ img {
     right: 0;
     width: 100%;
     height: calc(100% - 70px);
-  }
-  .bl_learnMore_card_imgBox:hover {
-    border: none;
+    /*ボーダーを消すため
+    &:hover {
+      border: none;
+    }
+    */
   }
   .bl_learnMore_card_txt {
     height: 70px;

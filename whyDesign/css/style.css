@@ -210,6 +210,13 @@ img {
   font-weight: 600;
 }
 
+/*以下ホバーアニメーション
+.bl_imgLink {
+  &:hover img{
+    transform: scale(1.1);
+  }
+}
+*/
 .bl_txtBox__whyDesign {
   width: 820px;
   margin: 0 auto;
@@ -308,11 +315,6 @@ img {
 .bl_imgLink img {
   -webkit-transition: .2s;
   transition: .2s;
-}
-
-.bl_imgLink:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .bl_imgLink_txt {
@@ -449,10 +451,6 @@ img {
   .bl_imgLink img {
     -webkit-transition: .2s;
     transition: .2s;
-  }
-  .bl_imgLink:hover img {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   .bl_imgLink_txt {
     position: absolute;
@@ -593,10 +591,6 @@ img {
   .bl_imgLink img {
     -webkit-transition: .2s;
     transition: .2s;
-  }
-  .bl_imgLink:hover img {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   .bl_imgLink_txt {
     position: absolute;
@@ -783,10 +777,6 @@ img {
     right: 0;
     -webkit-transition: .2s;
     transition: .2s;
-  }
-  .bl_imgLink:hover img {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   .bl_imgLink {
     margin-top: 60px !important;
