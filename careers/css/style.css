@@ -135,6 +135,12 @@ a:visited {
           transform: translateY(-50%);
 }
 
+.un_companyLink {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /*以下ホバーアニメーション
 .bl_imgAnim {
   overflow: hidden;
@@ -145,10 +151,17 @@ a:visited {
     transform: scale(1.1);
   }
 }
-.el_slideLink {
-  &:hover i {
+.un_iconAnim__right {
+    &:hover i {
     transform: translateX(5px) scale(1.2);
   }
+}
+.un_iconAnim__down {
+    &:hover i {
+    transform: translateY(5px) scale(1.2);
+  }
+}
+.el_slideLink {
   &:hover .defo,&:hover .hoverd {
     transform: translateY(-30px);
   }
@@ -365,12 +378,15 @@ a:visited {
   border-bottom: 1px solid #B5B5B5;
 }
 
-.el_slideLink {
+.un_studioLink {
   position: absolute;
   top: 50%;
   right: 10px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.el_slideLink {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1083,6 +1099,12 @@ a:visited {
   }
   .bl_learnMore_card_txt_body {
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .bl_MV_txt {
+    padding-left: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
