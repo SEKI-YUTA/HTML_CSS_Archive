@@ -33,33 +33,33 @@ img {
           transform: translateX(-50%) scale(1.5) scaleY(1.5);
 }
 
-.bl_borderCurve__top__w__whydesign {
+.bl_borderCurve__top__w {
   background-color: #096FC8;
 }
 
-.bl_borderCurve__top__w__whydesign::after {
+.bl_borderCurve__top__w::after {
   top: 0;
   background-color: #fff;
   -webkit-transform-origin: top;
           transform-origin: top;
 }
 
-.bl_borderCurve__top__ble__whydesign {
+.bl_borderCurve__top__ble {
   background-color: #fff;
 }
 
-.bl_borderCurve__top__ble__whydesign::after {
+.bl_borderCurve__top__ble::after {
   top: 0;
   background-color: #096FC8;
   -webkit-transform-origin: top;
           transform-origin: top;
 }
 
-.bl_borderCurve__bottom__ble__whydesign {
+.bl_borderCurve__bottom__ble {
   background-color: #fff;
 }
 
-.bl_borderCurve__bottom__ble__whydesign::after {
+.bl_borderCurve__bottom__ble::after {
   bottom: 0;
   background-color: #096FC8;
   -webkit-transform-origin: bottom;

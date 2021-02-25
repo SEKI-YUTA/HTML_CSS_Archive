@@ -62,8 +62,91 @@ a:visited {
   margin-top: 160px !important;
 }
 
+.hp_mt270 {
+  margin-top: 270px !important;
+}
+
+.hp_fw600 {
+  font-weight: 600 !important;
+}
+
 .hp_galno {
   font-family: "My Galano Grotesque", sans-serif !important;
+}
+
+txtVari {
+  font-family: "My Galano Grotesque", sans-serif;
+  font-size: 7vw;
+  font-weight: 700;
+}
+
+.el_txtSecTtl {
+  font-family: "My Galano Grotesque", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.el_txtLg__whydesign {
+  font-family: "My Galano Grotesque", sans-serif;
+  font-size: 100px;
+  line-height: 95px;
+  font-weight: 700;
+}
+
+.el_txtS__whydesign {
+  font-family: "A+EqpB-游ゴシック体 Pr6N B";
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.el_txtStepName {
+  font-family: "A+EqpB-游ゴシック体 Pr6N B";
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 600;
+}
+
+.el_txtSubTtl {
+  font-family: "A+EqpB-游ゴシック体 Pr6N B";
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.el_txtM {
+  font-family: "A+EqpB-游ゴシック体 Pr6N B";
+  font-size: 27px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.el_txt20 {
+  font-family: "A+EqpB-游ゴシック体 Pr6N B";
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.el_txtNormal {
+  font-family: "A+EqpB-游ゴシック体 Pr6N B";
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.un_number {
+  color: #2F85D0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.un_txtVari {
+  font-family: "My Galano Grotesque", sans-serif;
+  font-size: 7vw;
+  font-weight: 700;
 }
 
 .el_txtLg__career {
@@ -142,6 +225,15 @@ a:visited {
 }
 
 /*以下ホバーアニメーション
+WhyDesign
+.bl_imgLink {
+  &:hover img{
+    transform: scale(1.1);
+  }
+}
+*/
+/*以下ホバーアニメーション
+Career
 .bl_imgAnim {
   overflow: hidden;
   img {
@@ -186,6 +278,11 @@ a:visited {
 */
 .bl_txtBox__career {
   width: 100%;
+}
+
+.bl_txtBox__whyDesign {
+  width: 820px;
+  margin: 0 auto;
 }
 
 .bl_secTtl {
@@ -246,6 +343,22 @@ a:visited {
           transform-origin: bottom;
 }
 
+.bl_borderCurve__top__w {
+  background-color: #096FC8;
+}
+
+.bl_borderCurve__top__w::after {
+  top: 0;
+  background-color: #fff;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.ly_sec.bl_MV__whydesign {
+  width: 100%;
+  height: 100vh;
+}
+
 .ly_sec.bl_MV__career {
   width: 100%;
 }
@@ -257,6 +370,17 @@ a:visited {
 
 .bl_MV_txt {
   width: 1000px;
+}
+
+.ly_sec.bl_cause {
+  width: 100%;
+  background: #096FC8;
+  padding: 50px 0 100px 0;
+}
+
+.bl_cause .bl_imgbox {
+  width: 100%;
+  height: 600px;
 }
 
 .ly_sec.bl_joinMission {
@@ -575,6 +699,94 @@ a:visited {
   margin-top: 10px;
 }
 
+.bl_leftImg {
+  width: 75%;
+  margin-right: auto;
+}
+
+.bl_step {
+  width: 1120px;
+  padding-right: 20px;
+}
+
+.bl_step_card_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  margin-left: auto;
+}
+
+.bl_step_card_wrapper .waste {
+  width: 50%;
+}
+
+.bl_step_card {
+  width: 50%;
+}
+
+.el_subTtl__ja {
+  font-family: "A+EqpB-游ゴシック体 Pr6N M", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.bl_step_card:nth-child(2n) {
+  margin-top: 400px;
+}
+
+.bl_step_card:nth-child(2) {
+  margin-top: 80px;
+}
+
+.bl_hot {
+  background: #096FC8;
+}
+
+.bl_imgLink {
+  position: relative;
+  width: 1000px;
+  height: 380px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.bl_imgLink img {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.bl_imgLink_txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.service {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media screen and (max-width: 1280px) {
   .bl_borderCurve {
     position: relative;
@@ -680,6 +892,86 @@ a:visited {
     width: 100%;
     height: 185px;
   }
+  .bl_txtBox__whyDesign {
+    width: 650px;
+  }
+  .bl_borderCurve {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+  }
+  .bl_borderCurve::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    border-radius: 50%;
+    -webkit-transform: translateX(-50%) scale(1.5) scaleY(1.3);
+            transform: translateX(-50%) scale(1.5) scaleY(1.3);
+  }
+  .bl_MV_txt_wrapper {
+    width: 100%;
+    padding-top: 300px;
+  }
+  .bl_step {
+    width: calc(100% - 200px);
+  }
+  .bl_step_card_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
+  .bl_step_card_wrapper .waste {
+    width: 50%;
+  }
+  .bl_step_card {
+    width: 50%;
+  }
+  .el_subTtl__ja {
+    font-family: "A+EqpB-游ゴシック体 Pr6N M", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+  .bl_imgLink {
+    position: relative;
+    width: 910px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .bl_imgLink img {
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .bl_imgLink_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .service {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (max-width: 1028px) {
@@ -775,9 +1067,232 @@ a:visited {
     width: 100%;
     height: 170px;
   }
+  .bl_txtBox__whyDesign {
+    width: 600px;
+  }
+  .bl_borderCurve {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+  }
+  .bl_borderCurve::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    border-radius: 50%;
+    -webkit-transform: translateX(-50%) scale(1.5);
+            transform: translateX(-50%) scale(1.5);
+  }
+  .bl_MV_txt_wrapper {
+    width: 100%;
+    padding-top: 300px;
+  }
+  .bl_MV_txt {
+    width: 600px;
+  }
+  .bl_step {
+    width: calc(100% - 200px);
+  }
+  .bl_step_card_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 100%;
+    margin-left: auto;
+  }
+  .bl_step_card_wrapper .waste {
+    width: 100%;
+  }
+  .bl_step_card {
+    width: 100%;
+  }
+  .el_subTtl__ja {
+    font-family: "A+EqpB-游ゴシック体 Pr6N M", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+  .bl_imgLink {
+    position: relative;
+    width: 720px;
+    height: 270px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .bl_imgLink img {
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .bl_imgLink_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .service {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .el_txtLg__whydesign {
+    font-size: 53px;
+    line-height: 51px;
+  }
+  .el_txtS__whydesign {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .el_txtSubTtl {
+    font-size: 25px;
+    line-height: 32px;
+  }
+  .el_txtStepName {
+    font-family: "A+EqpB-游ゴシック体 Pr6N B";
+    font-size: 53px;
+    line-height: 43px;
+  }
+  .el_txtM {
+    font-family: "A+EqpB-游ゴシック体 Pr6N B";
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+  .un_txtVari {
+    font-size: 13vw;
+  }
+  .bl_txtBox__whyDesign {
+    width: calc(100% - 60px);
+  }
+  .bl_borderCurve {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  .bl_borderCurve::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    border-radius: 50%;
+    -webkit-transform: translateX(-50%) scale(2);
+            transform: translateX(-50%) scale(2);
+  }
+  .bl_MV_txt_wrapper {
+    width: 100%;
+    padding-top: 300px;
+  }
+  .bl_MV_txt {
+    width: 100% !important;
+    padding-left: 20px;
+  }
+  .ly_sec.bl_cause .bl_descriBox {
+    margin-top: 60px !important;
+  }
+  .bl_leftImg {
+    width: calc(100% - 60px);
+    margin-right: 0;
+  }
+  .bl_step {
+    width: calc(100% - 80px);
+    padding-right: 0px;
+  }
+  .bl_step_card_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 100%;
+    margin-left: auto;
+  }
+  .bl_step_card_wrapper .waste {
+    width: 100%;
+  }
+  .bl_step_card {
+    width: 100%;
+  }
+  .el_subTtl__ja {
+    font-family: "A+EqpB-游ゴシック体 Pr6N M", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .bl_imgLink {
+    position: relative;
+    width: calc(100% - 60px);
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .bl_imgLink::before {
+    content: '';
+    display: block;
+    padding-top: 40%;
+  }
+  .bl_imgLink img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .bl_imgLink {
+    margin-top: 60px !important;
+  }
+  .bl_imgLink_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .service {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .el_placeName {
     font-size: 27px;
     line-height: 32px;
@@ -1107,4 +1622,4 @@ a:visited {
     padding-left: 0px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=mixed.css.map */
