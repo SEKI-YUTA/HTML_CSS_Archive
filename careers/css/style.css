@@ -4,281 +4,64 @@
           box-sizing: border-box;
 }
 
-img {
+/* layout */
+.ly_sec.bl_MV__career {
   width: 100%;
-  height: 100%;
 }
+.ly_sec.bl_joinMission {
+  width: 100%;
+}
+.ly_sec.bl_ourVoices {
+  width: 100%;
+  background: #096FC8;
+}
+.ly_sec.bl_ourCulture {
+  width: 100%;
+  padding-top: 160px;
+  background: #096FC8;
+}
+.ly_sec.bl_careerOpp {
+  width: 100%;
+  margin-top: 100px;
+}
+.ly_sec.bl_getTo {
+  width: 100%;
+}
+.ly_sec.bl_memSupport {
+  width: 100%;
+}
+.ly_sec.bl_learnMore {
+  width: 100%;
+}
+/* ここまでlayout */
 
-a:visited {
-  color: inherit;
-}
-
-.hp_img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.hp_txtCenter {
-  text-align: center !important;
-}
-
-.hp_nonDecration {
-  text-decoration: none !important;
-}
-
-.hp_m0a {
-  margin: 0 auto;
-}
-
-.hp_txtB {
-  color: #333 !important;
-}
-
-.hp_txtW {
-  color: #fff !important;
-}
-
-.hp_txtBLE {
-  color: #2F85D0 !important;
-}
-
-.hp_mt20 {
-  margin-top: 20px !important;
-}
-
-.hp_mt35 {
-  margin-top: 35px !important;
-}
-
-.hp_mt60 {
-  margin-top: 60px !important;
-}
-
-.hp_mt70 {
-  margin-top: 70px !important;
-}
-
-.hp_mt160 {
-  margin-top: 160px !important;
-}
-
-.hp_galno {
-  font-family: "My Galano Grotesque", sans-serif !important;
-}
-
-.el_txtLg__career {
-  font-family: "My Galano Grotesque", sans-serif;
-  font-size: 100px;
-  line-height: 95px;
-  font-weight: 700;
-}
-
-.el_txtS__career {
-  font-family: "A+EqpB-游ゴシック体 Pr6N B";
-  font-size: 23px;
-  line-height: 28px;
-  font-weight: 400;
-}
-
-.el_txt27 {
-  font-family: "A+EqpB-游ゴシック体 Pr6N B";
-  font-size: 27px;
-  line-height: 32px;
-  font-weight: 600;
-}
-
-.el_txt16 {
-  font-family: "A+EqpB-游ゴシック体 Pr6N B";
-  font-size: 16px;
-  line-height: 32px;
-  font-weight: 400;
-}
-
-.el_placeName {
-  font-size: 53px;
-  line-height: 60px;
-  font-weight: 600;
-  padding-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.el_placeName i {
-  display: block;
-  font-size: 30px;
-  color: #096FC8;
-  line-height: 53px;
-}
-
-.el_txtSecTtl__s {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 600;
-}
-
-.el_txtOpp {
-  font-family: "A+EqpB-游ゴシック体 Pr6N B", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 600;
-}
-
-.el_linkIcon {
-  position: absolute;
-  top: 50%;
-  right: 30px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.un_companyLink {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-/*以下ホバーアニメーション
-.bl_imgAnim {
-  overflow: hidden;
-  img {
-    transition: .2s;
-  }
-  &:hover img{
-    transform: scale(1.1);
-  }
-}
-.un_iconAnim__right {
-    &:hover i {
-    transform: translateX(5px) scale(1.2);
-  }
-}
-.un_iconAnim__down {
-    &:hover i {
-    transform: translateY(5px) scale(1.2);
-  }
-}
-.el_slideLink {
-  &:hover .defo,&:hover .hoverd {
-    transform: translateY(-30px);
-  }
-}
-.bl_opportunit_cont_name {
-  i {
-    &:hover {
-      transform: scale(1.2) translateY(-5px) translateX(5px);
-    }
-  }
-}
-.bl_getTo_card {
-  &:hover .bl_getTo_card_imgBox{
-    border: 5px solid $bgColor;
-  }
-}
-.bl_learnMore_card {
-  &:hover .bl_learnMore_card_imgBox{
-    border: 5px solid $bgColor;
-  }
-}
-*/
+/* block */
 .bl_txtBox__career {
   width: 100%;
 }
-
 .bl_secTtl {
   width: 1025px;
   margin: 0 auto;
 }
-
 .bl_secTtl h2 {
   font-size: 80px;
   line-height: 72px;
   font-weight: 800;
 }
-
 .bl_secTtl p {
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
 }
-
-.bl_borderCurve {
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 450px;
-  overflow: hidden;
-}
-
-.bl_borderCurve::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  width: 100%;
-  height: 100vh;
-  border-radius: 50%;
-  -webkit-transform: translateX(-50%) scale(1.5) scaleY(1.5);
-          transform: translateX(-50%) scale(1.5) scaleY(1.5);
-}
-
-.bl_borderCurve__top__ble {
-  background-color: #fff;
-}
-
-.bl_borderCurve__top__ble::after {
-  top: 0;
-  background-color: #096FC8;
-  -webkit-transform-origin: top;
-          transform-origin: top;
-}
-
-.bl_borderCurve__bottom__ble {
-  background-color: #fff;
-}
-
-.bl_borderCurve__bottom__ble::after {
-  bottom: 0;
-  background-color: #096FC8;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-}
-
-.ly_sec.bl_MV__career {
-  width: 100%;
-}
-
-.bl_MV_txt_wrapper {
-  width: 100%;
-  padding-top: 300px;
-}
-
-.bl_MV_txt {
-  width: 1000px;
-}
-
-.ly_sec.bl_joinMission {
-  width: 100%;
-}
-
 .bl_introSlide {
   position: relative;
   width: 1000px;
   height: 570px;
   border: 1px solid gray;
 }
-
 .bl_joinMission_presen_descri {
   width: 810px;
 }
-
-.ly_sec.bl_ourVoices {
-  width: 100%;
-  background: #096FC8;
-}
-
 .bl_voices_cardSlider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -286,70 +69,52 @@ a:visited {
   overflow-x: scroll;
   overflow-y: hidden;
 }
-
 .bl_voices_cardSlider::-webkit-scrollbar {
   display: none;
 }
-
 .bl_voices_cardSlide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0 calc((100% - 684px) / 2);
 }
-
 .bl_voice_card {
   min-width: 684px;
 }
-
 .bl_voice_card:not(:first-child) {
   margin-left: 100px;
 }
-
 .bl_voice_imgBox {
   width: 100%;
 }
-
 .bl_voice_imgBox img {
   width: 100%;
   border-radius: 10px;
 }
-
-.ly_sec.bl_ourCulture {
-  width: 100%;
-  padding-top: 160px;
-  background: #096FC8;
-}
-
 .bl_cultures_wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (315px)[3];
-      grid-template-columns: repeat(3, 315px);
+  grid-template-columns: repeat(3, 315px);
   grid-auto-rows: 315px;
   grid-gap: 40px;
   width: 1025px;
 }
-
 .bl_culture {
   width: 315px;
   height: 315px;
   border-radius: 10px;
   overflow: hidden;
 }
-
 .bl_culture_imgBox {
   height: 210px;
   width: 100%;
   overflow: hidden;
 }
-
 .bl_culture_txt {
   height: calc(100% - 210px);
   background: #fff;
   position: relative;
 }
-
 .bl_culture_txt p {
   position: absolute;
   top: 50%;
@@ -361,64 +126,18 @@ a:visited {
   line-height: 28px;
   font-weight: 400;
 }
-
-.ly_sec.bl_careerOpp {
-  width: 100%;
-  margin-top: 100px;
-}
-
 .bl_opportunit_wrapper {
   width: 1024px;
   margin-top: 60px;
 }
-
 .bl_txtBox_name {
   position: relative;
   width: 100%;
   border-bottom: 1px solid #B5B5B5;
 }
-
-.un_studioLink {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.el_slideLink {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.el_slideLink .linkTxt {
-  height: 30px;
-  overflow: hidden;
-}
-
-.el_slideLink .defo, .el_slideLink .hoverd {
-  height: 30px;
-  line-height: 30px;
-  -webkit-transition: .3s;
-  transition: .3s;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.el_slideLink i {
-  margin-left: 5px;
-  -webkit-transition: .3s;
-  transition: .3s;
-  line-height: 30px;
-}
-
 .bl_opportunit_cont {
   margin-top: 45px;
 }
-
 .bl_opportunit_cont_descri {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -427,34 +146,24 @@ a:visited {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .bl_opportunit_cont_descri_genre {
   width: 40%;
 }
-
 .bl_opportunit_cont_descri_txt {
   width: 60%;
 }
-
 .bl_opportunit_cont_names {
   width: 60%;
   margin-left: auto;
 }
-
 .bl_opportunit_cont_name > p {
   line-height: 65px;
 }
-
 .bl_opportunit_cont_name i {
   color: #096FC8;
   -webkit-transition: .3s;
   transition: .3s;
 }
-
-.ly_sec.bl_getTo {
-  width: 100%;
-}
-
 .bl_getTo_cards_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -466,36 +175,26 @@ a:visited {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .bl_getTo_card {
   width: 495px;
   height: 400px;
   -webkit-transition: .3s;
   transition: .3s;
 }
-
 .bl_getTo_card:first-of-type {
   margin-right: 40px;
 }
-
 .bl_getTo_card_imgBox {
   width: 100%;
   height: 315px;
   border-radius: 10px;
 }
-
 .bl_getTo_cont_txtBox .bl_getTo_cont_ttl {
   margin-top: 25px;
 }
-
 .bl_getTo_cont_txtBox .bl_getTo_cont_descri {
   margin-top: 5px;
 }
-
-.ly_sec.bl_memSupport {
-  width: 100%;
-}
-
 .bl_supports_wrapper {
   width: 1024px;
   display: -webkit-box;
@@ -512,33 +211,23 @@ a:visited {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .bl_support {
   width: calc(50% - 55px);
 }
-
 .bl_support:nth-child(n + 3) {
   margin-top: 70px;
 }
-
 .bl_support_ttl {
   font-size: 20px;
   line-height: 24px;
 }
-
 .bl_support_descri {
   font-size: 13px;
   line-height: 24px;
 }
-
-.ly_sec.bl_learnMore {
-  width: 100%;
-}
-
 .bl_learnMore_inner {
   width: 1024px;
 }
-
 .bl_learnMore_cards_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -548,14 +237,12 @@ a:visited {
           justify-content: space-between;
   width: 820px;
 }
-
 .bl_learnMore_card {
   width: 385px;
   height: 400px;
   -webkit-transition: .3s;
   transition: .3s;
 }
-
 .bl_learnMore_card_imgBox {
   width: 385px;
   height: 235px;
@@ -564,43 +251,173 @@ a:visited {
   transition: .3s;
   border-radius: 10px;
 }
-
 .bl_learnMore_card_txt_ttl {
   font-size: 20px;
   line-height: 26px;
   font-weight: 500;
 }
-
 .bl_learnMore_card_txt_body {
   margin-top: 10px;
 }
+/* ここまでblock */
+
+/* element */
+.el_txtLg__career {
+  font-family: "My Galano Grotesque", sans-serif;
+  font-size: 100px;
+  line-height: 95px;
+  font-weight: 700;
+}
+
+.el_txtS__career {
+  font-family: "A+EqpB-游ゴシック体 Pr6N B";
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.el_placeName {
+  font-size: 53px;
+  line-height: 60px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.el_placeName i {
+  display: block;
+  font-size: 30px;
+  color: #096FC8;
+  line-height: 53px;
+}
+.el_txtSecTtl__s {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.el_txtOpp {
+  font-family: "A+EqpB-游ゴシック体 Pr6N B", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.el_linkIcon {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.el_slideLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.el_slideLink .linkTxt {
+  height: 30px;
+  overflow: hidden;
+}
+.el_slideLink .defo, .el_slideLink .hoverd {
+  height: 30px;
+  line-height: 30px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.el_slideLink i {
+  margin-left: 5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  line-height: 30px;
+}
+/* ここまでelement */
+
+/* helper */
+.hp_galno {
+  font-family: "My Galano Grotesque", sans-serif !important;
+}
+/* ここまでhelper */
+
+/* unique */
+.un_companyLink {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.un_studioLink {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+/* ここまでunique */
+
+
+
+/*以下ホバーアニメーション
+.bl_imgAnim {
+  overflow: hidden;
+}
+img {
+  transition: .2s;
+}
+.bl_imgAnim:hover img{
+  transform: scale(1.1);
+}
+
+.un_iconAnim__right:hover i {
+transform: translateX(5px) scale(1.2);
+}
+
+.un_iconAnim__down:hover i {
+transform: translateY(5px) scale(1.2);
+}
+
+.el_slideLink:hover .defo, .el_slideLink:hover .hoverd {
+  transform: translateY(-30px);
+}
+
+.bl_opportunit_cont_name:hover i {
+  transform: scale(1.2) translateY(-5px) translateX(5px);
+}
+
+.bl_getTo_card:hover .bl_getTo_card_imgBox{
+  border: 5px solid $bgColor;
+}
+
+.bl_learnMore_card .bl_learnMore_card_imgBox{
+  border: 5px solid $bgColor;
+}
+*/
+
+
+
 
 @media screen and (max-width: 1280px) {
-  .bl_borderCurve {
-    position: relative;
-    top: 0;
+  /* layout */
+  .ly_sec.bl_ourCulture {
     width: 100%;
-    height: 450px;
-    overflow: hidden;
+    background: #096FC8;
   }
-  .bl_borderCurve::after {
-    content: '';
-    position: absolute;
-    left: 50%;
+  .ly_sec.bl_careerOpp {
     width: 100%;
-    height: 100vh;
-    border-radius: 50%;
-    -webkit-transform: translateX(-50%) scale(1.5) scaleY(1.3);
-            transform: translateX(-50%) scale(1.5) scaleY(1.3);
+    margin-top: 100px;
   }
+  /* ここまでlayout */
+
+  /* block */
   .bl_secTtl {
     width: 820px;
   }
   .bl_secTtl p {
     margin-top: 5px;
-  }
-  .bl_MV_txt {
-    width: 820px;
   }
   .bl_introSlide {
     width: 820px;
@@ -619,15 +436,10 @@ a:visited {
   .bl_voice_card:not(:first-child) {
     margin-left: 100px;
   }
-  .ly_sec.bl_ourCulture {
-    width: 100%;
-    background: #096FC8;
-  }
   .bl_cultures_wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (390px)[2];
-        grid-template-columns: repeat(2, 390px);
+    grid-template-columns: repeat(2, 390px);
     grid-auto-rows: 390px;
     grid-gap: 40px;
     width: 820px;
@@ -644,10 +456,6 @@ a:visited {
   }
   .bl_culture_txt {
     height: calc(100% - 255px);
-  }
-  .ly_sec.bl_careerOpp {
-    width: 100%;
-    margin-top: 100px;
   }
   .bl_opportunit_wrapper {
     width: 820px;
@@ -680,31 +488,20 @@ a:visited {
     width: 100%;
     height: 185px;
   }
+  /* ここまでblock */
 }
 
 @media screen and (max-width: 1028px) {
-  .bl_borderCurve {
-    position: relative;
-    top: 0;
+  /* layout */
+  .ly_sec.bl_careerOpp {
     width: 100%;
-    height: 450px;
-    overflow: hidden;
+    margin-top: 100px;
   }
-  .bl_borderCurve::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    width: 100%;
-    height: 100vh;
-    border-radius: 50%;
-    -webkit-transform: translateX(-50%) scale(1.5);
-            transform: translateX(-50%) scale(1.5);
-  }
+  /* ここまでlayout */
+
+  /* block */
   .bl_secTtl {
     width: 720px;
-  }
-  .bl_MV_txt {
-    width: 700px;
   }
   .bl_introSlide {
     width: 720px;
@@ -725,7 +522,6 @@ a:visited {
   .bl_cultures_wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (340px)[2];
         grid-template-columns: repeat(2, 340px);
     grid-auto-rows: 330px;
     grid-gap: 40px;
@@ -741,10 +537,6 @@ a:visited {
   }
   .bl_culture_txt {
     height: calc(100% - 225px);
-  }
-  .ly_sec.bl_careerOpp {
-    width: 100%;
-    margin-top: 100px;
   }
   .bl_opportunit_wrapper {
     width: 720px;
@@ -775,30 +567,28 @@ a:visited {
     width: 100%;
     height: 170px;
   }
+  /* ここまでblock */
 }
 
 @media screen and (max-width: 768px) {
-  .el_placeName {
-    font-size: 27px;
-    line-height: 32px;
-    font-weight: 700;
+  /* layout */
+  .ly_sec.bl_ourCulture {
+    width: 100%;
+    background: #096FC8;
   }
-  .el_placeName i {
-    display: block;
-    font-size: 16px;
-    color: #096FC8;
-    line-height: 20px;
+  .ly_sec.bl_careerOpp {
+    width: 100%;
+    margin-top: 100px;
   }
-  .el_txtLg__career {
-    font-size: 50px;
-    line-height: 51px;
-    font-weight: 700;
+  .ly_sec.bl_memSupport {
+    width: 100%;
   }
-  .el_txtS__career {
-    font-size: 15px;
-    line-height: 20px;
-    font-weight: 400;
+  .ly_sec.bl_learnMore {
+    width: 100%;
   }
+  /* ここまでlayout */
+
+  /* block */
   .bl_secTtl {
     width: 100%;
     margin: 0 auto;
@@ -813,27 +603,6 @@ a:visited {
     font-size: 11px;
     line-height: 16px;
     font-weight: 400;
-  }
-  .bl_borderCurve {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-  }
-  .bl_borderCurve::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    width: 100%;
-    height: 100vh;
-    border-radius: 50%;
-    -webkit-transform: translateX(-50%) scale(2.5);
-            transform: translateX(-50%) scale(2.5);
-  }
-  .bl_MV_txt {
-    width: 100%;
-    padding-left: 20px;
   }
   .bl_joinMission_presen_wrapper {
     width: calc(100% - 50px);
@@ -865,9 +634,6 @@ a:visited {
   .bl_voices_cardSlide {
     padding: 0 25px;
   }
-  .un_circle {
-    display: none;
-  }
   .bl_voice_card {
     min-width: 0px;
     max-width: 385px;
@@ -875,17 +641,6 @@ a:visited {
   }
   .bl_voice_card:not(:first-child) {
     margin-left: 15px;
-  }
-  .el_voiceTxt {
-    font-size: 16px;
-    line-height: 32px;
-  }
-  .el_voiceTxt i {
-    margin-right: 5px;
-  }
-  .ly_sec.bl_ourCulture {
-    width: 100%;
-    background: #096FC8;
   }
   .bl_cultures_wrapper {
     display: -webkit-box;
@@ -946,10 +701,6 @@ a:visited {
     -webkit-transform: none;
             transform: none;
   }
-  .ly_sec.bl_careerOpp {
-    width: 100%;
-    margin-top: 100px;
-  }
   .bl_opportunit_wrapper {
     width: calc(100% - 50px);
     margin-top: 60px;
@@ -996,12 +747,12 @@ a:visited {
     display: flex;
     width: 100%;
     height: 100px;
-    /* ボーダーを消すため
-    &:hover .bl_getTo_card_imgBox{
-      border: none;
-    }
-    */
   }
+  /* ボーダーを消すため
+  .bl_getTo_card:hover .bl_getTo_card_imgBox{
+    border: none;
+  }
+  */
   .bl_getTo_card:first-of-type {
     margin-right: 0px;
   }
@@ -1023,9 +774,6 @@ a:visited {
   }
   .bl_getTo_cont_txtBox {
     margin-left: 20px;
-  }
-  .ly_sec.bl_memSupport {
-    width: 100%;
   }
   .bl_supports_wrapper {
     width: calc(100% - 50px);
@@ -1049,9 +797,6 @@ a:visited {
   .bl_support_descri {
     font-size: 13px;
     line-height: 24px;
-  }
-  .ly_sec.bl_learnMore {
-    width: 100%;
   }
   .bl_learnMore_inner {
     width: calc(100% - 50px);
@@ -1080,12 +825,12 @@ a:visited {
     right: 0;
     width: 100%;
     height: calc(100% - 70px);
-    /* ボーダーを消すため
-    &:hover {
-      border: none;
-    }
-    */
   }
+  /* ボーダーを消すため
+  .bl_learnMore_card_imgBox:hover {
+    border: none;
+  }
+  */
   .bl_learnMore_card_txt {
     height: 70px;
     padding-top: 60%;
@@ -1100,11 +845,44 @@ a:visited {
   .bl_learnMore_card_txt_body {
     margin-top: 10px;
   }
+  /* ここまでblock */
+
+  /* element */
+  .el_placeName {
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+  .el_placeName i {
+    display: block;
+    font-size: 16px;
+    color: #096FC8;
+    line-height: 20px;
+  }
+  .el_txtLg__career {
+    font-size: 50px;
+    line-height: 51px;
+    font-weight: 700;
+  }
+  .el_txtS__career {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .el_voiceTxt {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  .el_voiceTxt i {
+    margin-right: 5px;
+  }
+  /* ここまでelement */
+
+  /* unique */
+  .un_circle {
+    display: none;
+  }
+  /* ここまでunique */
 }
 
-@media screen and (max-width: 365px) {
-  .bl_MV_txt {
-    padding-left: 0px;
-  }
-}
 /*# sourceMappingURL=style.css.map */
