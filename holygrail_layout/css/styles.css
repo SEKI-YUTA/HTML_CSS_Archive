@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    border: black 2px solid;
+    height: 150px;
+}
+div.main{
+    display: flex;
+    flex: 1;
+    border: black 2px solid;
+
+}
+nav{
+    width: 150px;
+    border: black 2px solid;
+
+}
+main{
+    flex: 1;
+    border: black 2px solid;
+
+}
+aside{
+    width: 200px;
+    border: black 2px solid;
+
+}
+footer{
+    height: 200px;
+    border: black 2px solid;
+
+}
+@media (max-width: 1000px){
+    div.main{
+        flex-direction: column;
+    }
+    nav{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+}
