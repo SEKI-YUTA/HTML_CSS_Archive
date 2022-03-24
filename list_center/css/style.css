@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  margin-top: 50px;
+  display: block;
+  text-align: center;
+}
+ul {
+  display: inline-block;
+}
+li {
+  text-align: left;
+  font-size: 2em;
+}
