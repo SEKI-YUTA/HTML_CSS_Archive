@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+p,h1,h2,h3,h4,h5,h6 {
+    color: #333333;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+input,select {
+    border: 1px solid #EBEBEB;
+}
+input:focus {
+    border: 1px solid #EBEBEB;
+}
+.btn {
+    float: left;
+}
+header .right_item {
+    color: white;
+}
+main section {
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+}
+main section:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+main {
+    padding-top: 65px;
+}
+.hero {
+    /* height: 620px; */
+    overflow: hidden;
+}
+.hero .img {
+    max-width: 1600px;
+    width: 100%;
+    height: 620px;
+    background:  linear-gradient(rgba(0,0,0,0) 70%,rgba(0,0,0,.8)),url(../img/hero.jpg) no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+.hero .img .host {
+    height: 420px;
+    width: 450px;
+    background: white;
+    position: absolute;
+    right: 90px;
+    top: 90px;
+}
+.host form {
+    text-align: center;
+
+}
+.host form input {
+    width: calc(100% - 60px);
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    /* margin: 0 30px; */
+}
+.host form input[type="submit"] {
+    background: #DC0E63;
+    border: 0;
+    margin-top: 50px;
+    color: white;
+}
+/* .host .options {
+    display: flex;
+    justify-content: center;
+    alin
+} */
+.host form > div {
+    width: calc(100% - 60px);
+    margin-top: 10px;
+}
+.host form .type {
+    display: inline-block;
+    width: 245px;
+    height: 40px;
+    margin-right: 5px;
+}
+.host form .people {
+    display: inline-block;
+    width: calc(100% - 5px);
+    height: 40px;
+    margin-left: 5px;
+}
+.host .horizontal {
+    padding: 0 30px;
+}
+.start {
+    width: calc(100% - 60px);
+}
+.intro {
+    margin-top: 60px;
+}
+.feature {
+    justify-content: space-between;
+}
+.feature > div{
+    width: 460px;
+}
+.host_title {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40px;
+    padding: 30px 30px 0 30px;
+
+}
+.host_detail {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    padding-left: 30px;
+    margin: 15px 0;
+}
+.sec_title-nb {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 64px;
+    position: relative;
+    padding-left: 20px;
+    color: #333333;
+}
+.sec_title {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 64px;
+    position: relative;
+    padding: 20px;
+    color: #333333;
+}
+.sec_title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 100px;
+    height: 5px;
+    background: #333333;
+}
+
+.sub-tilte {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 30px;
+    color: #484848;
+}
+.letter {
+    position: relative;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #787878;
+}
+.letter::before {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    content: '"';
+    font-size: 5em;
+    color: yellow;
+}
+.detail {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #484848;
+}
+.item {
+    flex: 1;
+}
+.item2 {
+    width: 310px;
+}
+.item3 {
+    width: 430px;
+    margin-left: 30px;
+}
+.item3:first-of-type {
+    margin: 0;
+}
+.item3 ul li {
+    margin: 10px 0;
+}
+.real {
+    box-sizing: border-box;
+}
+.real div {
+    padding: 20px;
+}
+.real div img {
+    width: 500px;
+    height: auto;
+}
+
+.ifsafe .horizontal div {
+    flex: 1;
+}
+
+/*省略あとで書く*/
+
+.simplePay 
+
+
+.oftenQuestin ul {
+    margin: 20px;
+}
+.oftenQuestin ul li {
+    color: var(--info);
+    border-bottom: 1px solid gray;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.invaitation {
+    background: url(../img/BG.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    max-width: 1270px;
+    width: 100%;
+    height: 440px;
+    margin: 0 auto;
+}
+.invaitation > div {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    /* transform: translate(-100px,-100px); */
+}
+.invaitation h3 {
+    color: white;
+}
+footer > div {
+    width: 1270px;
+}
+.horizontal2 {
+    width: 100%;
+}
