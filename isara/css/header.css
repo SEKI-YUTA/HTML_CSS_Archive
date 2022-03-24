@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    background: white;
+    z-index: 9999;
+}
+header > div {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0;
+}
+.isara_logo {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.isara_logo p {
+    /* vertical-align: bottom; */
+    margin: 0;
+    /* font-weight: bold; */
+    margin-top: auto;
+    margin-left: 5px;
+    font-weight: 400;
+}
+.isara_logo img {
+    
+    height: 45px;
+}
+.contact_button {
+    height: 40px;
+    border-radius: 30px;
+    line-height: 40px;
+    background: #da6b64;
+    padding:  0 40px;
+    color: white;
+}
