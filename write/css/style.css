@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1035px;
+  width: 100%;
+  margin: 0 auto;
+}
+.top-menu {
+  overflow: auto;
+  margin: 55px 0px
+}
+.top-menu .fas {
+  margin-right: 5px;
+}
+.left-item {
+  float: left;
+}
+.right-item {
+  float: right;
+}
+.right-item li {
+  list-style: none;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 53px;
+  color: #777777;
+  padding: 5px 15px;
+  vertical-align: bottom;
+}
+.right-item .fa-search {
+  margin-left: 150px;
+}
+.left-item h1 {
+  font-size: 36px;
+  line-height: 43px;
+  color: #111111;
+  font-weight: normal;
+}
+h1,h2,h3,p {
+  font-family: Georgia, 游明朝, YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+}
+.sub-title {
+  font-size: 27px;
+  color: #777777;
+  line-height: 49px;
+  font-family: Georgia;
+  font-weight: normal;
+  margin: 55px 0px 70px 0px;
+}
+.log-title {
+  font-size: 18px;
+  line-height: 32px;
+  color: #444444;
+}
+
+.update-log {
+  display: flex;
+  margin-bottom: 55px;
+}
+.update-log .date {
+  width: 100px;
+  color: #666666;
+  font-size: 17px;
+  line-height: 30px;
+}
+.update-log .log {
+  margin-left: 230px;
+  flex: 1;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page,.next {
+  list-style: none;
+  border: 1px #EEEEEE solid;
+}
+.page {
+  margin-right: 20px;
+}
+.page a,
+.next a {
+  display: inline-block;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #333333;
+
+}
+.active {
+  background: #EEEEEE;
+}
+.name-plate {
+  display: flex;
+}
+.profile-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.profile .fab {
+  font-size: 30px;
+  margin-left: 10px;
+}
+.name {
+  font-size: 19px;
+  line-height: 32px;
+  font-weight: 600;
+}
+.art-title-mini{
+  font-size: 17px;
+  line-height: 29px;
+  color: #999999;
+}
+
+.wegets {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
+  padding: 55px 0px;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+}
+.weget {
+  width: 20%;
+  margin: 0px 20px;
+}
+.categorys li a{
+  color: #777777;
+}
+.resent-post {
+  text-align: center;
+}
+.resent-post ul {
+  display: inline-block;
+}
+.resent-post li {
+  text-align: left;
+}
+footer {
+  width: 1035px;
+  margin: 0 auto;
+  padding: 55px 0px;
+  text-align: center;
+}
