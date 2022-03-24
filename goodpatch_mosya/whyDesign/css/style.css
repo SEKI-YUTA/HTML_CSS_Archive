@@ -1,0 +1,407 @@
+@charset "UTF-8";
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* layout */
+.ly_main {
+  width: 100%;
+}
+.ly_main_inner {
+  width: 100%;
+}
+.ly_sec.bl_MV__whydesign {
+  width: 100%;
+  height: 100vh;
+}
+.ly_sec.bl_cause {
+  width: 100%;
+  background: #096FC8;
+  padding: 50px 0 100px 0;
+}
+/* ここまでlayout */
+
+/* block */
+.bl_txtBox__whyDesign {
+  width: 820px;
+  margin: 0 auto;
+}
+.bl_cause .bl_imgbox {
+  width: 100%;
+  height: 600px;
+}
+.bl_leftImg {
+  width: 75%;
+  margin-right: auto;
+}
+.bl_step {
+  width: 1120px;
+  padding-right: 20px;
+}
+.bl_step_card_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  margin-left: auto;
+}
+.bl_step_card_wrapper .waste {
+  width: 50%;
+}
+.bl_step_card {
+  width: 50%;
+}
+.bl_step_card:nth-child(2n) {
+  margin-top: 400px;
+}
+.bl_step_card:nth-child(2) {
+  margin-top: 80px;
+}
+.bl_hot {
+  background: #096FC8;
+}
+.bl_imgLink {
+  position: relative;
+  width: 1000px;
+  height: 380px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.bl_imgLink img {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+.bl_imgLink_txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.bl_service {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* ここまでblock */
+
+/* element */
+.el_txtSecTtl {
+  font-family: "My Galano Grotesque", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.el_txtLg__whydesign {
+  font-family: "My Galano Grotesque", sans-serif;
+  font-size: 100px;
+  line-height: 95px;
+  font-weight: 700;
+}
+.el_txtS__whydesign {
+  font-family: "A+EqpB-游ゴシック体 Pr6N B";
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.el_txtStepName {
+  font-family: "A+EqpB-游ゴシック体 Pr6N B";
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 600;
+}
+.el_txtSubTtl {
+  font-family: "A+EqpB-游ゴシック体 Pr6N B";
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 600;
+}
+.el_txtM {
+  font-family: "A+EqpB-游ゴシック体 Pr6N B";
+  font-size: 27px;
+  line-height: 36px;
+  font-weight: 600;
+}
+.el_txt20 {
+  font-family: "A+EqpB-游ゴシック体 Pr6N B";
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.el_txtNormal {
+  font-family: "A+EqpB-游ゴシック体 Pr6N B";
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 400;
+}
+.el_subTtl__ja {
+  font-family: "A+EqpB-游ゴシック体 Pr6N M", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+/* ここまでelement */
+
+/* helper */
+.hp_mt270 {
+  margin-top: 270px !important;
+}
+.hp_fw600 {
+  font-weight: 600 !important;
+}
+/* ここまでhelper */
+
+/* ここまでunique */
+.un_txtVari {
+  font-family: "My Galano Grotesque", sans-serif;
+  font-size: 7vw;
+  font-weight: 700;
+}
+.un_number {
+  color: #2F85D0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+}
+/* unique */
+
+
+
+
+/*以下ホバーアニメーション
+.bl_imgLink:hover img{
+  transform: scale(1.1);
+}
+*/
+
+
+@media screen and (max-width: 1280px) {
+  /* block */
+  .bl_txtBox__whyDesign {
+    width: 650px;
+  }
+  .bl_step {
+    width: calc(100% - 200px);
+  }
+  .bl_step_card_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
+  .bl_step_card_wrapper .waste {
+    width: 50%;
+  }
+  .bl_step_card {
+    width: 50%;
+  }
+  .bl_imgLink {
+    position: relative;
+    width: 910px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .bl_imgLink img {
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .bl_imgLink_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  /* ここまでblock */
+
+  /* element */
+  .el_subTtl__ja {
+    font-family: "A+EqpB-游ゴシック体 Pr6N M", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+  /* ここまでelement */
+}
+
+@media screen and (max-width: 1028px) {
+  /* block */
+  .bl_txtBox__whyDesign {
+    width: 600px;
+  }
+  .bl_step {
+    width: calc(100% - 200px);
+  }
+  .bl_step_card_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 100%;
+    margin-left: auto;
+  }
+  .bl_step_card_wrapper .waste {
+    width: 100%;
+  }
+  .bl_step_card {
+    width: 100%;
+  }  .bl_imgLink {
+    position: relative;
+    width: 720px;
+    height: 270px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .bl_imgLink img {
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .bl_imgLink_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  /* ここまでblock */
+
+  /* element */
+  .el_subTtl__ja {
+    font-family: "A+EqpB-游ゴシック体 Pr6N M", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+  /* ここまでelement */
+}
+
+@media screen and (max-width: 768px) {
+  /* layout */
+  .ly_sec.bl_cause .bl_descriBox {
+    margin-top: 60px !important;
+  }
+  /* ここまでlayout */
+  
+  /* block */
+  .bl_txtBox__whyDesign {
+    width: calc(100% - 60px);
+  }
+  .bl_leftImg {
+    width: calc(100% - 60px);
+    margin-right: 0;
+  }
+  .bl_step {
+    width: calc(100% - 80px);
+    padding-right: 0px;
+  }
+  .bl_step_card_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 100%;
+    margin-left: auto;
+  }
+  .bl_step_card_wrapper .waste {
+    width: 100%;
+  }
+  .bl_step_card {
+    width: 100%;
+  }
+  .bl_imgLink {
+    position: relative;
+    width: calc(100% - 60px);
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .bl_imgLink::before {
+    content: '';
+    display: block;
+    padding-top: 40%;
+  }
+  .bl_imgLink img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .bl_imgLink {
+    margin-top: 60px !important;
+  }
+  .bl_imgLink_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .bl_service p:nth-child(2){
+    margin-top: 10px !important;
+  }
+  /* ここまでblock */
+
+  /* element */
+  .el_txtLg__whydesign {
+    font-size: 53px;
+    line-height: 51px;
+  }
+  .el_txtS__whydesign {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .el_txtSubTtl {
+    font-size: 25px;
+    line-height: 32px;
+  }
+  .el_txtStepName {
+    font-family: "A+EqpB-游ゴシック体 Pr6N B";
+    font-size: 53px;
+    line-height: 43px;
+  }
+  .el_txtM {
+    font-family: "A+EqpB-游ゴシック体 Pr6N B";
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+  .el_subTtl__ja {
+    font-family: "A+EqpB-游ゴシック体 Pr6N M", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* ここまでelement */
+
+  /* unique */
+  .un_txtVari {
+    font-size: 13vw;
+  }
+  /* ここまでunique */
+}
+/*# sourceMappingURL=style.css.map */

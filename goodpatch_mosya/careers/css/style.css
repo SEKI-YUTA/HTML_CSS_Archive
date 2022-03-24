@@ -1,0 +1,888 @@
+@charset "UTF-8";
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* layout */
+.ly_sec.bl_MV__career {
+  width: 100%;
+}
+.ly_sec.bl_joinMission {
+  width: 100%;
+}
+.ly_sec.bl_ourVoices {
+  width: 100%;
+  background: #096FC8;
+}
+.ly_sec.bl_ourCulture {
+  width: 100%;
+  padding-top: 160px;
+  background: #096FC8;
+}
+.ly_sec.bl_careerOpp {
+  width: 100%;
+  margin-top: 100px;
+}
+.ly_sec.bl_getTo {
+  width: 100%;
+}
+.ly_sec.bl_memSupport {
+  width: 100%;
+}
+.ly_sec.bl_learnMore {
+  width: 100%;
+}
+/* ここまでlayout */
+
+/* block */
+.bl_txtBox__career {
+  width: 100%;
+}
+.bl_secTtl {
+  width: 1025px;
+  margin: 0 auto;
+}
+.bl_secTtl h2 {
+  font-size: 80px;
+  line-height: 72px;
+  font-weight: 800;
+}
+.bl_secTtl p {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.bl_introSlide {
+  position: relative;
+  width: 1000px;
+  height: 570px;
+  border: 1px solid gray;
+}
+.bl_joinMission_presen_descri {
+  width: 810px;
+}
+.bl_voices_cardSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.bl_voices_cardSlider::-webkit-scrollbar {
+  display: none;
+}
+.bl_voices_cardSlide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 calc((100% - 684px) / 2);
+}
+.bl_voice_card {
+  min-width: 684px;
+}
+.bl_voice_card:not(:first-child) {
+  margin-left: 100px;
+}
+.bl_voice_imgBox {
+  width: 100%;
+}
+.bl_voice_imgBox img {
+  width: 100%;
+  border-radius: 10px;
+}
+.bl_cultures_wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(3, 315px);
+  grid-auto-rows: 315px;
+  grid-gap: 40px;
+  width: 1025px;
+}
+.bl_culture {
+  width: 315px;
+  height: 315px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.bl_culture_imgBox {
+  height: 210px;
+  width: 100%;
+  overflow: hidden;
+}
+.bl_culture_txt {
+  height: calc(100% - 210px);
+  background: #fff;
+  position: relative;
+}
+.bl_culture_txt p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: calc(100% - 20px);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.bl_opportunit_wrapper {
+  width: 1024px;
+  margin-top: 60px;
+}
+.bl_txtBox_name {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #B5B5B5;
+}
+.bl_opportunit_cont {
+  margin-top: 45px;
+}
+.bl_opportunit_cont_descri {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.bl_opportunit_cont_descri_genre {
+  width: 40%;
+}
+.bl_opportunit_cont_descri_txt {
+  width: 60%;
+}
+.bl_opportunit_cont_names {
+  width: 60%;
+  margin-left: auto;
+}
+.bl_opportunit_cont_name > p {
+  line-height: 65px;
+}
+.bl_opportunit_cont_name i {
+  color: #096FC8;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.bl_getTo_cards_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bl_getTo_card {
+  width: 495px;
+  height: 400px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.bl_getTo_card:first-of-type {
+  margin-right: 40px;
+}
+.bl_getTo_card_imgBox {
+  width: 100%;
+  height: 315px;
+  border-radius: 10px;
+}
+.bl_getTo_cont_txtBox .bl_getTo_cont_ttl {
+  margin-top: 25px;
+}
+.bl_getTo_cont_txtBox .bl_getTo_cont_descri {
+  margin-top: 5px;
+}
+.bl_supports_wrapper {
+  width: 1024px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bl_support {
+  width: calc(50% - 55px);
+}
+.bl_support:nth-child(n + 3) {
+  margin-top: 70px;
+}
+.bl_support_ttl {
+  font-size: 20px;
+  line-height: 24px;
+}
+.bl_support_descri {
+  font-size: 13px;
+  line-height: 24px;
+}
+.bl_learnMore_inner {
+  width: 1024px;
+}
+.bl_learnMore_cards_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 820px;
+}
+.bl_learnMore_card {
+  width: 385px;
+  height: 400px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.bl_learnMore_card_imgBox {
+  width: 385px;
+  height: 235px;
+  overflow: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 10px;
+}
+.bl_learnMore_card_txt_ttl {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+}
+.bl_learnMore_card_txt_body {
+  margin-top: 10px;
+}
+/* ここまでblock */
+
+/* element */
+.el_txtLg__career {
+  font-family: "My Galano Grotesque", sans-serif;
+  font-size: 100px;
+  line-height: 95px;
+  font-weight: 700;
+}
+
+.el_txtS__career {
+  font-family: "A+EqpB-游ゴシック体 Pr6N B";
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.el_placeName {
+  font-size: 53px;
+  line-height: 60px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.el_placeName i {
+  display: block;
+  font-size: 30px;
+  color: #096FC8;
+  line-height: 53px;
+}
+.el_txtSecTtl__s {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.el_txtOpp {
+  font-family: "A+EqpB-游ゴシック体 Pr6N B", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.el_linkIcon {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.el_slideLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.el_slideLink .linkTxt {
+  height: 30px;
+  overflow: hidden;
+}
+.el_slideLink .defo, .el_slideLink .hoverd {
+  height: 30px;
+  line-height: 30px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.el_slideLink i {
+  margin-left: 5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  line-height: 30px;
+}
+/* ここまでelement */
+
+/* helper */
+.hp_galno {
+  font-family: "My Galano Grotesque", sans-serif !important;
+}
+/* ここまでhelper */
+
+/* unique */
+.un_companyLink {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.un_studioLink {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+/* ここまでunique */
+
+
+
+/*以下ホバーアニメーション
+.bl_imgAnim {
+  overflow: hidden;
+}
+img {
+  transition: .2s;
+}
+.bl_imgAnim:hover img{
+  transform: scale(1.1);
+}
+
+.un_iconAnim__right:hover i {
+transform: translateX(5px) scale(1.2);
+}
+
+.un_iconAnim__down:hover i {
+transform: translateY(5px) scale(1.2);
+}
+
+.el_slideLink:hover .defo, .el_slideLink:hover .hoverd {
+  transform: translateY(-30px);
+}
+
+.bl_opportunit_cont_name:hover i {
+  transform: scale(1.2) translateY(-5px) translateX(5px);
+}
+
+.bl_getTo_card:hover .bl_getTo_card_imgBox{
+  border: 5px solid $bgColor;
+}
+
+.bl_learnMore_card .bl_learnMore_card_imgBox{
+  border: 5px solid $bgColor;
+}
+*/
+
+
+
+
+@media screen and (max-width: 1280px) {
+  /* layout */
+  .ly_sec.bl_ourCulture {
+    width: 100%;
+    background: #096FC8;
+  }
+  .ly_sec.bl_careerOpp {
+    width: 100%;
+    margin-top: 100px;
+  }
+  /* ここまでlayout */
+
+  /* block */
+  .bl_secTtl {
+    width: 820px;
+  }
+  .bl_secTtl p {
+    margin-top: 5px;
+  }
+  .bl_introSlide {
+    width: 820px;
+    height: 450px;
+    border: 1px solid gray;
+  }
+  .bl_joinMission_presen_descri {
+    width: 650px;
+  }
+  .bl_voices_cardSlide {
+    padding: 0 calc((100% - 545px) / 2);
+  }
+  .bl_voice_card {
+    min-width: 545px;
+  }
+  .bl_voice_card:not(:first-child) {
+    margin-left: 100px;
+  }
+  .bl_cultures_wrapper {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(2, 390px);
+    grid-auto-rows: 390px;
+    grid-gap: 40px;
+    width: 820px;
+  }
+  .bl_culture {
+    width: 390px;
+    height: 390px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .bl_culture_imgBox {
+    height: 255px;
+    width: 100%;
+  }
+  .bl_culture_txt {
+    height: calc(100% - 255px);
+  }
+  .bl_opportunit_wrapper {
+    width: 820px;
+    margin-top: 60px;
+  }
+  .bl_getTo_card {
+    width: 385px;
+    height: 374px;
+    border-radius: 10px;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .bl_getTo_card_imgBox {
+    width: 100%;
+    height: 260px;
+  }
+  .bl_supports_wrapper {
+    width: 820px;
+  }
+  .bl_learnMore_inner {
+    width: 820px;
+  }
+  .bl_learnMore_cards_wrapper {
+    width: 645px;
+  }
+  .bl_learnMore_card {
+    width: 305px;
+  }
+  .bl_learnMore_card_imgBox {
+    width: 100%;
+    height: 185px;
+  }
+  /* ここまでblock */
+}
+
+@media screen and (max-width: 1028px) {
+  /* layout */
+  .ly_sec.bl_careerOpp {
+    width: 100%;
+    margin-top: 100px;
+  }
+  /* ここまでlayout */
+
+  /* block */
+  .bl_secTtl {
+    width: 720px;
+  }
+  .bl_introSlide {
+    width: 720px;
+    height: 400px;
+  }
+  .bl_joinMission_presen_descri {
+    width: 600px;
+  }
+  .bl_voices_cardSlide {
+    padding: 0 calc((100% - 480px) / 2);
+  }
+  .bl_voice_card {
+    min-width: 480px;
+  }
+  .bl_voice_card:not(:first-child) {
+    margin-left: 60px;
+  }
+  .bl_cultures_wrapper {
+    display: -ms-grid;
+    display: grid;
+        grid-template-columns: repeat(2, 340px);
+    grid-auto-rows: 330px;
+    grid-gap: 40px;
+    width: 720px;
+  }
+  .bl_culture {
+    width: 340px;
+    height: 330px;
+  }
+  .bl_culture_imgBox {
+    height: 225px;
+    width: 100%;
+  }
+  .bl_culture_txt {
+    height: calc(100% - 225px);
+  }
+  .bl_opportunit_wrapper {
+    width: 720px;
+    margin-top: 60px;
+  }
+  .bl_getTo_card {
+    width: 340px;
+    height: 340px;
+  }
+  .bl_getTo_card_imgBox {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+  }
+  .bl_supports_wrapper {
+    width: 720px;
+  }
+  .bl_learnMore_inner {
+    width: 720px;
+  }
+  .bl_learnMore_cards_wrapper {
+    width: 645px;
+  }
+  .bl_learnMore_card {
+    width: 305px;
+  }
+  .bl_learnMore_card_imgBox {
+    width: 100%;
+    height: 170px;
+  }
+  /* ここまでblock */
+}
+
+@media screen and (max-width: 768px) {
+  /* layout */
+  .ly_sec.bl_ourCulture {
+    width: 100%;
+    background: #096FC8;
+  }
+  .ly_sec.bl_careerOpp {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .ly_sec.bl_memSupport {
+    width: 100%;
+  }
+  .ly_sec.bl_learnMore {
+    width: 100%;
+  }
+  /* ここまでlayout */
+
+  /* block */
+  .bl_secTtl {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+  .bl_secTtl h2 {
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 700;
+  }
+  .bl_secTtl p {
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+  .bl_joinMission_presen_wrapper {
+    width: calc(100% - 50px);
+    margin: 0 auto;
+  }
+  .bl_introSlide {
+    width: 100%;
+    height: auto;
+    border: 1px solid gray;
+  }
+  .bl_introSlide::before {
+    content: '';
+    display: block;
+    padding-top: 57%;
+  }
+  .bl_joinMission_presen_descri {
+    width: 100%;
+  }
+  .bl_joinMission_presen_ttl {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  .bl_joinMission_presen_body {
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+  .bl_voices_cardSlide {
+    padding: 0 25px;
+  }
+  .bl_voice_card {
+    min-width: 0px;
+    max-width: 385px;
+    width: calc(100vw - 60px);
+  }
+  .bl_voice_card:not(:first-child) {
+    margin-left: 15px;
+  }
+  .bl_cultures_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: calc(100% - 50px);
+  }
+  .bl_cultures_wrapper * {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  .bl_culture {
+    position: relative;
+    width: 100%;
+    height: calc(65% + 60px);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .bl_culture_imgBox {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+  }
+  .bl_culture_txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    padding-top: 65%;
+    height: 60px;
+  }
+  .bl_culture_txt p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    position: static;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    padding: 0 10px;
+    width: 100%;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .bl_opportunit_wrapper {
+    width: calc(100% - 50px);
+    margin-top: 60px;
+  }
+  .bl_txtBox_name {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #B5B5B5;
+  }
+  .bl_opportunit_cont {
+    margin-top: 30px;
+  }
+  .bl_opportunit_cont_descri {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bl_opportunit_cont_descri_genre {
+    width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .bl_opportunit_cont_descri_txt {
+    width: 100%;
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .bl_opportunit_cont_names {
+    width: 100%;
+    margin-left: initial;
+  }
+  .bl_getTo_cards_wrapper {
+    width: calc(100% - 50px);
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bl_getTo_card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100px;
+  }
+  /* ボーダーを消すため
+  .bl_getTo_card:hover .bl_getTo_card_imgBox{
+    border: none;
+  }
+  */
+  .bl_getTo_card:first-of-type {
+    margin-right: 0px;
+  }
+  .bl_getTo_card:last-of-type {
+    margin-top: 20px;
+  }
+  .bl_getTo_card_imgBox {
+    width: 150px;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .bl_getTo_card_imgBox img {
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .bl_getTo_cont_txtBox .bl_getTo_cont_ttl {
+    margin-top: 0;
+  }
+  .bl_getTo_cont_txtBox {
+    margin-left: 20px;
+  }
+  .bl_supports_wrapper {
+    width: calc(100% - 50px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px !important;
+  }
+  .bl_support {
+    width: 100%;
+    margin-top: 30px !important;
+  }
+  .bl_support:nth-child(n + 3) {
+    margin-top: 0px;
+  }
+  .bl_support_ttl {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .bl_support_descri {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .bl_learnMore_inner {
+    width: calc(100% - 50px);
+  }
+  .bl_learnMore_cards_wrapper {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px !important;
+  }
+  .bl_learnMore_cards_wrapper * {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  .bl_learnMore_card {
+    position: relative;
+    width: 100%;
+    height: calc(60% + 70px);
+  }
+  .bl_learnMore_card_imgBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: calc(100% - 70px);
+  }
+  /* ボーダーを消すため
+  .bl_learnMore_card_imgBox:hover {
+    border: none;
+  }
+  */
+  .bl_learnMore_card_txt {
+    height: 70px;
+    padding-top: 60%;
+    margin-top: 0;
+  }
+  .bl_learnMore_card_txt_ttl {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+  }
+  .bl_learnMore_card_txt_body {
+    margin-top: 10px;
+  }
+  /* ここまでblock */
+
+  /* element */
+  .el_placeName {
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+  .el_placeName i {
+    display: block;
+    font-size: 16px;
+    color: #096FC8;
+    line-height: 20px;
+  }
+  .el_txtLg__career {
+    font-size: 50px;
+    line-height: 51px;
+    font-weight: 700;
+  }
+  .el_txtS__career {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .el_voiceTxt {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  .el_voiceTxt i {
+    margin-right: 5px;
+  }
+  /* ここまでelement */
+
+  /* unique */
+  .un_circle {
+    display: none;
+  }
+  /* ここまでunique */
+}
+
+/*# sourceMappingURL=style.css.map */
