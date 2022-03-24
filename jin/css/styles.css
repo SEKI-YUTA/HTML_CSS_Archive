@@ -1,0 +1,581 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+header {
+  text-align: center;
+}
+
+header .logo {
+  font-family: Quicksand, "Noto Sans Japanese", sans-serif;
+  font-size: 3.3rem;
+  font-weight: 400;
+  color: #0d0015;
+  margin-top: 50px;
+}
+
+header .logo span {
+  padding: 15px;
+}
+
+header .logo .green {
+  color: #9ACC1E;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header ul li {
+  padding: 25px;
+  font-size: 1.6rem;
+}
+
+header ul li .bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  padding: 0 -20px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+header ul li:hover .bar {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  background: #000;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.download {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  border-radius: 20px;
+  background: #ff20a9;
+  border: 1px solid white;
+  -webkit-box-shadow: -2px 0 0 0 #ff20a9;
+          box-shadow: -2px 0 0 0 #ff20a9;
+}
+
+.main-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.main-container main {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  width: 66%;
+  padding: 0 30px;
+}
+
+.main-container main .card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-container main .card:nth-of-type(even) {
+  margin-left: 20px;
+}
+
+.main-container main .card:nth-of-type(n + 3) {
+  margin-top: 20px;
+}
+
+.main-container main .card {
+  width: calc(50% - 10px);
+  border: none;
+  border: 1px solid #EEEEEE;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.main-container main .card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 2px 2px 10px gray;
+          box-shadow: 2px 2px 10px gray;
+}
+
+.main-container main .card .img-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.main-container main .card .img-wrapper img {
+  width: 100%;
+}
+
+.main-container main .card .img-wrapper p {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 7px;
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 1rem;
+  background: #9ACC1E;
+  color: white;
+}
+
+.main-container main .card .textContent {
+  width: 100%;
+  height: 140px;
+  position: relative;
+}
+
+.main-container main .card .textContent a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 26px;
+  color: #0d0015;
+}
+
+.main-container main .card .textContent a:active {
+  color: #0d0015;
+}
+
+.main-container main .card .textContent a .date {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #888888;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.main-container main .card .textContent a .discription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 26px;
+  color: #0d0015;
+}
+
+.main-container main .pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.main-container main .pages p {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #BFBFBF;
+  background: #fff;
+  border: 1px #BFBFBF solid;
+  line-height: 30px;
+  text-align: center;
+}
+
+.main-container main .pages p.active {
+  background: #000;
+  color: white;
+}
+
+.main-container main .pages p + p {
+  margin-left: 15px;
+}
+
+aside {
+  width: 33%;
+}
+
+aside > div {
+  margin: 0 30px;
+}
+
+aside > div:not(:first-of-type) {
+  margin-top: 20px;
+}
+
+aside .asideTitle {
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #0d0015;
+}
+
+aside .asideTitle::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: gray;
+  margin: 5px 0 10px 0;
+}
+
+aside .text {
+  font-size: 1.4rem;
+  font-weight: 200;
+  color: #0d0015;
+}
+
+aside .sales {
+  border: 1px solid #EEEEEE;
+}
+
+aside .sales .theme {
+  width: 100%;
+}
+
+aside .sales .theme h2 {
+  font-size: 2rem;
+  padding: 10px 0;
+  color: white;
+  text-align: center;
+  background-color: #222;
+  font-weight: bold;
+}
+
+aside .sales .content {
+  padding: 20px 30px;
+}
+
+aside .sales .content img {
+  width: 100%;
+}
+
+aside .profile {
+  border: 1px solid #EEEEEE;
+  padding: 20px 30px;
+}
+
+aside .profile div {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+aside .profile div img {
+  border-radius: 50%;
+}
+
+aside .profile .description,
+aside .profile .sns {
+  margin-top: 16px;
+}
+
+aside .resentPosts {
+  border: 1px solid #EEEEEE;
+  padding: 20px 30px;
+}
+
+aside .resentPosts .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 5px 0;
+}
+
+aside .resentPosts .post img {
+  width: 34%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+aside .resentPosts .post p {
+  width: 66%;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 18px;
+  padding: 5px;
+}
+
+aside .resentPosts .post p:hover {
+  color: #e22255;
+}
+
+aside .categorys {
+  border: 1px solid #EEEEEE;
+  padding: 20px 30px;
+}
+
+aside .categorys select {
+  width: 100%;
+}
+
+aside .tags {
+  border: 1px solid #EEEEEE;
+  padding: 20px 30px;
+}
+
+aside .tags span {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 3px;
+  margin: 0 3px;
+  background: gray;
+}
+
+aside .tags span i {
+  color: white;
+}
+
+aside .search {
+  border: 1px solid #EEEEEE;
+  padding: 20px 30px;
+}
+
+aside .search input[type="text"] {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  height: 30px;
+  border-radius: 15px;
+  padding: 0 10px;
+}
+
+aside .recommend {
+  border: 1px solid #EEEEEE;
+  padding: 20px 30px;
+}
+
+aside .recommend .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 5px 0;
+}
+
+aside .recommend .post img {
+  width: 34%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+aside .recommend .post p {
+  width: 66%;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 18px;
+  padding: 5px;
+}
+
+aside .recommend .post p:hover {
+  color: #e22255;
+}
+
+footer {
+  width: 100%;
+  background: #393542;
+  padding: 50px 0;
+  margin-top: 50px;
+  font-size: 1.6rem;
+}
+
+footer .title {
+  color: white;
+  font-size: 2rem;
+  position: relative;
+}
+
+footer .title::before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 20px;
+  position: absolute;
+  left: -10px;
+  background: lightgreen;
+}
+
+footer .container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 4fr 4fr;
+      grid-template-columns: 3fr 4fr 4fr;
+}
+
+footer .container .left {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  color: white;
+}
+
+footer .container .left .logoWrap {
+  text-align: center;
+}
+
+footer .container .left .logoWrap img {
+  width: 150px;
+}
+
+footer .container .left p {
+  margin-top: 20px;
+}
+
+footer .container .left .tags span {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 3px;
+  margin: 0 3px;
+  background: gray;
+}
+
+footer .container .center {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .container .center .category,
+footer .container .center .archives {
+  width: 200px;
+  margin: 0 20px;
+}
+
+footer .container .center .category a,
+footer .container .center .archives a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .container .right {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+}
+
+footer .container .right .post {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 5px 0;
+}
+
+footer .container .right .post img {
+  width: 32.5%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+footer .container .right .post p {
+  width: 67.5%;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 18px;
+  padding: 5px;
+  color: white;
+}
+
+footer .container .right .post p:hover {
+  color: #e22255;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    margin-bottom: 30px;
+  }
+  header ul {
+    display: none;
+  }
+  .main-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-container main {
+    width: 100%;
+  }
+  .main-container aside {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #EEEEEE;
+  }
+  .main-container aside > div {
+    margin: 30px 0px;
+  }
+  .main-container aside .sales img {
+    width: 100%;
+  }
+  .main-container aside .sales .content {
+    margin-top: 20px;
+  }
+  footer .container {
+    width: 100%;
+    display: block;
+  }
+  footer .container .center {
+    display: block;
+  }
+  footer .container .category ul li,
+  footer .container .archives ul li {
+    margin: 10px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
